@@ -1,0 +1,111 @@
+
+.container{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+width: 1266px;
+height: 324px;
+gap: 80px;
+
+
+
+}
+
+.title{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+width: 540px;
+height: 64px;
+}
+
+.title h4{
+  width: 378px;
+  height: 32px;
+  color: #5F6974;
+  /* font-family: ; */
+  
+}
+.testimonialContainer {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 1266px;
+height: 180px;
+}
+
+.testimonial {
+flex: none;
+order: 1;
+flex-grow: 0;
+width: Hug (406px)px;
+height: Hug (180px)px;
+padding: 40px 16px 40px 16px;
+gap: 24px;
+border-radius: 0px 0px 0px 0px;
+opacity: 0px;
+background: #F5F8F8;
+
+}
+
+.testimonialImg {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px; 
+}
+
+
+.testimonialInfo h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.testimonialInfo p {
+  font-size: 0.875rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+
+.Section {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 80px;
+width: 1266px;
+height: 324px;
+}
+
+
+/* flex: none;
+order: 5;
+flex-grow: 0; */
+
+/* Frame 80 */
+
+
+
+
+/* Inside auto layout
+flex: none;
+order: 0;
+flex-grow: 0; */
+
+/* Frame 21 */
+
+
+
+
+
+/* Inside auto layout
+flex: none;
+order: 1;
+flex-grow: 0; */
