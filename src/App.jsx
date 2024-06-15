@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
 
+
 function App() {
   return (
     <div>
