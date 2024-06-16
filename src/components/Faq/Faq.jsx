@@ -1,5 +1,6 @@
 import React from "react";
 import "./faq.css";
+import Button from "./Button";
 
 function GroupExample() {
   return (
@@ -126,11 +127,16 @@ function GroupExample() {
           </div>
         </div>
         <div class="faq-footer">
-          <h2>Still have questions?</h2>
-          <p>
-            Can't find the answer you're looking for? Please chat to our
-            friendly team.
-          </p>
+          <div>
+            <h2>Still have questions?</h2>
+            <p>
+              Can't find the answer you're looking for? Please chat to our
+              friendly team.
+            </p>
+          </div>
+          <div>
+            <Button>Primary</Button>
+          </div>
         </div>
       </div>
     </>
