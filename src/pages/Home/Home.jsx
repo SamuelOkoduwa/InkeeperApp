@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Faq from "../../components/Faq/Faq.jsx";
 
 function Home() {
   return (
-	<div>Welcome to InKeeper</div>
-  )
+    <div>
+      <Faq />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
