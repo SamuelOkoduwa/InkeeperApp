@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.video-container {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure video stays within container */
+}
+
+.text-content {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: rgb(196, 193, 193);
+}
+
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
