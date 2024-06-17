@@ -11,3 +11,85 @@
   text-align: center;
   transition: box-shadow 0.3s ease;
 }
+.icon {
+  width: Hug (64px) px;
+  height: Hug (62px) px;
+  padding: 15px 16px 15px 16px;
+  gap: 8px;
+  border-radius: 12px 0px 0px 0px;
+  opacity: 0px;
+}
+.title {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #2f3337;
+  gap: 0px;
+  opacity: 0px;
+}
+.blendedLearning {
+  width: 174px;
+  height: 24px;
+}
+.instructorLedSessions {
+  width: 233px;
+  height: 24px;
+}
+.peerCollaboration {
+  width: 247px;
+  height: 48px;
+}
+.globallyCurated {
+  width: 247px;
+  height: 48px;
+}
+.expertMentorship {
+  width: 247px;
+  height: 48px;
+}
+.locallyTailored {
+  width: 247px;
+  height: 24px;
+}
+.flexiblePayment {
+  width: 247px;
+  height: 24px;
+}
+.entrepreneurshipSupport {
+  height: 48px;
+  width: 247px;
+}
+.learnMore {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 91px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  color: #0041e4;
+  text-decoration: none;
+}
+.description {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width: 247px;
+  height: 96px;
+  gap: 0px;
+  opacity: 0px;
+  color: #73808f;
+}
+.title,
+.description {
+  width: Hug (247px) px;
+  height: Hug (136px) px;
+  gap: 16px;
+  opacity: 0px;
+}
