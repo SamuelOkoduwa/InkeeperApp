@@ -1,0 +1,26 @@
+.container {
+  background-color: #e4f5ff;
+  width: 1437px;
+  height: 304px;
+  padding: 40px;
+  gap: 80px;
+  display: justify-content-center align-content-center;
+}
+
+.write-up {
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 160px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 16px;
+}
