@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import "../LandingPageHero/LandingPageHero.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
-import Software from "../../assets/Images/soft-dev.png";
-import Designer from "../../assets/Images/prod-des.png";
-import Analyst from "../../assets/Images/data-analyst.png";
-import Cyber from "../../assets/Images/cyber-sec.png";
-import Eighty from "../../assets/Images/80.png"
-import Ninety from "../../assets/Images/90.png"
-import Thousand from "../../assets/Images/1000.png"
+import Software from "../../assets/images/UI/soft-dev.png";
+import Designer from "../../assets/images/UI/prod-des.png";
+import Analyst from "../../assets/images/UI/data-analyst.png";
+import Cyber from "../../assets/images/UI/cyber-sec.png";
+import Eighty from "../../assets/images/UI/80.png";
+import Ninety from "../../assets/images/UI/90.png";
+import Thousand from "../../assets/images/UI/1000.png";
 
 function LandingPageHero() {
   // Text Slide
@@ -33,7 +33,6 @@ function LandingPageHero() {
     setCurrentName(names[index]);
   }, [index, names]);
 
-
   //  Image Slide
   const images = [Software, Designer, Analyst, Cyber];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -45,7 +44,6 @@ function LandingPageHero() {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [images.length]);
-  
 
   // Output
   return (
