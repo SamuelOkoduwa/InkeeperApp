@@ -11,14 +11,6 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Why Choose Us</h1>
-        <p>
-          At Innkeeper, we offer a unique learning experience that combines
-          flexibility, expertise, and support to set you up for success
-        </p>
-      </header>
-      <WhyChooseUsGrid />
       <BrowserRouter>
         <NavBar />
         <Routes>
