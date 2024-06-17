@@ -1,0 +1,13 @@
+.featureCard {
+  width: Hug (295px) px;
+  height: Hug (342px) px;
+  /* width: 295px;
+  height: 342px; */
+  padding: 32px 24px 32px 24px;
+  gap: 16px;
+  border-radius: 16px;
+  opacity: 0px;
+  background: #e4f5ff;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
