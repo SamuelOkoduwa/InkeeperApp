@@ -1,9 +1,10 @@
 import React from 'react'
+import GroupExample from '../../components/Faq/Faq'
 
 function About() {
   return (
 	<div>
-	  Welcome to About page
+	  <GroupExample />
 	</div>
   )
 }

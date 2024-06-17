@@ -40,7 +40,11 @@ To run this project locally, follow these steps:
 ## Directory Structure
 
 - `src/pages`: Contains the React components for each page.
+
 - `src/main.jsx`: Sets up routing for the application.
+
+- `src/app.jsx`: Sets up routing for the application.
+>>>>>>> 36a80ce9d485ef7a54ce533c9f32a5c9c58872ef
 - `src/index.css`: Basic styles for the application.
 
 ## License
