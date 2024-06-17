@@ -1,4 +1,3 @@
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,7 +11,7 @@ const testimonialsData = [
   {
     name: "Zoe Mantis",
     role: "Founder, Alpha Group",
-    image: Zoe, 
+    image: Zoe,
     testimonial:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
   },
@@ -40,7 +39,7 @@ const Testimonials = () => {
     slidesToShow: 3, // Number of testimonials to show in a row
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3500,
     responsive: [
       {
         breakpoint: 1024,
@@ -59,36 +58,37 @@ const Testimonials = () => {
     ],
   };
   return (
-    <div className="testimonial-container">
-      <div className="title">
+    <div className="styles.container" style={{ backgroundColor: "#F5F8F8" }}>
+      <div className="styles.titlecontainer">
         <h4>What our students are saying?</h4>
         <p>
           Read what our students are saying about us and be informed on your
           decision
         </p>
       </div>
-      <div>
-        <Slider {...settings}>
-          {testimonialsData.map((testimonial, index) => (
-            <div key={index} className={styles.testimonialContainer}>
-              <div className={styles.testimonial}>
+
+      <Slider {...settings}>
+        {testimonialsData.map((testimonial, index) => (
+          <div key={index} className={styles.testimonialContainer}>
+            <div className={styles.testimonial}>
+              <div className={styles.testimonialInfo}>
                 <img
                   className={styles.testimonialImg}
                   src={testimonial.image}
                   alt={testimonial.name}
                 />
-                <div className={styles.testimonialInfo}>
+                <div className={styles.nameRole}>
                   <h3>{testimonial.name}</h3>
                   <p>{testimonial.role}</p>
                 </div>
-                <div className={styles.testimonialText}>
-                  <p>{testimonial.testimonial}</p>
-                </div>
+              </div>
+              <div className={styles.testimonialText}>
+                <p>{testimonial.testimonial}</p>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
