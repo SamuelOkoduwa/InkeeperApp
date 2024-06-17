@@ -6,7 +6,6 @@ import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
-import OurCourses from "./components/OurCourses/OurCourses"
 
 function App() {
   return (
@@ -22,7 +21,7 @@ function App() {
           <Route path="/applyNow" element={<ApplyNow />} />
         </Routes>
       </BrowserRouter>
-      <OurCourses />
+      
     </div>
   );
 }

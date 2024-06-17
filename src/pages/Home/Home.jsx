@@ -1,8 +1,11 @@
 import React from 'react'
+import OurCourses from '../../components/OurCourses/OurCourses'
 
 function Home() {
   return (
-	<div>Welcome to InKeeper</div>
+	<div>Welcome to InKeeper
+    <OurCourses />
+  </div>
   )
 }
 
