@@ -6,22 +6,25 @@ import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
+import OurCourses from "./components/OurCourses/OurCourses"
 
 function App() {
   return (
     <div>
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/applyNow" element={<ApplyNow />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
+        
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/applyNow" element={<ApplyNow />} />
+        </Routes>
+      </BrowserRouter>
+      <OurCourses />
     </div>
-  )
+  );
 }
 
 export default App
