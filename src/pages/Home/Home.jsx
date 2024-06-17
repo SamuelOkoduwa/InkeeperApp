@@ -1,15 +1,17 @@
-import React from 'react'
-import Testimonials from '../../components/Testimonials/Testimonials'
+import React from "react";
+import Testimonials from "../../components/Testimonials/Testimonials";
 function Home() {
   return (
-    <div>
-      <h1>Welcome to InKeeper</h1>
+    <>
+      <div>
+        <h1>Welcome to InKeeper</h1>
+      </div>
 
-      
-      
-      <Testimonials/>
-    </div>
+      <div >
+        <Testimonials />
+      </div>
+    </>
   );
 }
 
-export default Home
+export default Home;
