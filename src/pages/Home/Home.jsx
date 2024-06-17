@@ -1,8 +1,11 @@
 import React from 'react'
+import LandingPageHero from '../../components/LandingPageHero/LandingPageHero'
 
 function Home() {
   return (
-	<div>Welcome to InKeeper</div>
+	<div>
+    <LandingPageHero />
+  </div>
   )
 }
 
