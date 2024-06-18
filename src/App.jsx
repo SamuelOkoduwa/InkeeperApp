@@ -23,6 +23,7 @@ function App() {
         <Route path="/applyNow" element={<ApplyNow />} />
       </Routes>
     </BrowserRouter>
+   
     </div>
   )
 }
