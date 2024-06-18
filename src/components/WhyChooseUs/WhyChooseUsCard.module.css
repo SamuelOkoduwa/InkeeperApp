@@ -6,7 +6,6 @@
   padding: 32px 24px 32px 24px;
   gap: 16px;
   border-radius: 16px;
-  opacity: 0px;
   background: #e4f5ff;
   text-align: center;
   transition: box-shadow 0.3s ease;
@@ -17,7 +16,6 @@
   padding: 15px 16px 15px 16px;
   gap: 8px;
   border-radius: 12px 0px 0px 0px;
-  opacity: 0px;
 }
 .title {
   font-family: Poppins;
@@ -27,7 +25,6 @@
   text-align: center;
   color: #2f3337;
   gap: 0px;
-  opacity: 0px;
 }
 .blendedLearning {
   width: 174px;
@@ -93,7 +90,7 @@
   width: 247px;
   height: 96px;
   gap: 0px;
-  opacity: 0px;
+
   color: #73808f;
 }
 .title,
@@ -101,5 +98,4 @@
   width: Hug (247px) px;
   height: Hug (136px) px;
   gap: 16px;
-  opacity: 0px;
 }

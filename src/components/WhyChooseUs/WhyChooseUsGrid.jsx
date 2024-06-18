@@ -8,7 +8,7 @@ const learningOptions = [
     description:
       "Learn at your own speed and convenience with our comprehensive online learning modules.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82.png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Blendedlearning.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "blendedLearning",
   },
@@ -17,7 +17,7 @@ const learningOptions = [
     description:
       "Gain in-depth knowledge and clarify concepts through interactive live sessions with experienced instructors.",
     icon: "src/components/WhyChooseUs/whyimages/secondf.png.png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Instructorled.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "instructorLedSessions",
   },
@@ -26,7 +26,7 @@ const learningOptions = [
     description:
       "Network and learn from fellow trainees in a supportive online community.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (1).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Peercollaboration.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "peerCollaboration",
   },
@@ -35,7 +35,7 @@ const learningOptions = [
     description:
       "Access latest industry-relevant curriculum from leading tech organisations.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (2).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Globallycurated.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "globallyCurated",
   },
@@ -44,7 +44,7 @@ const learningOptions = [
     description:
       "Receive guidance and support from experienced professionals in your chosen tech field.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (3).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Expertmentorship.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "expertMentorship",
   },
@@ -53,7 +53,7 @@ const learningOptions = [
     description:
       "Benefit from content that addresses the specific needs and context of the African tech market.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (4).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Locallytailored.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "locallyTailored",
   },
@@ -62,7 +62,7 @@ const learningOptions = [
     description:
       "Choose a payment plan that fits your budget, making quality tech education accessible to everyone.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (5).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Flexiblepayment.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "flexiblePayment",
   },
@@ -71,7 +71,7 @@ const learningOptions = [
     description:
       "Explore opportunities to launch your own tech-driven venture.",
     icon: "src/components/WhyChooseUs/whyimages/Frame 82 (6).png",
-    link: "#",
+    link: "src/components/WhyChooseUs/Entrepreneurshipsupport.jsx",
     arrow: "src/components/WhyChooseUs/whyimages/arrow-right (1).png",
     styleName: "entrepreneurshipSupport",
   },
