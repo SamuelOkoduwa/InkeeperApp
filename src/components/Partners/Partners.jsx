@@ -7,7 +7,8 @@ import Col from "react-bootstrap/Col";
 
 const Partners = () => {
   return (
-    <Container>
+    <Container style={{ backgroundColor: "aliceBlue" }}>
+      <br/>
       <h5>We partner with amazing companies</h5>
       <p>There are companies that work with us and we love them absolutly.</p>
 
@@ -43,7 +44,7 @@ const Partners = () => {
           />
         </Col>
       </Row>
-<br/>
+      <br />
       <Row>
         <Col>
           <img
@@ -71,7 +72,7 @@ const Partners = () => {
           />
         </Col>
       </Row>
-<br/>
+      <br />
       <Row>
         <Col></Col>
         <Col>
@@ -94,6 +95,7 @@ const Partners = () => {
         </Col>
         <Col></Col>
       </Row>
+      <br/>
     </Container>
   );
 };
