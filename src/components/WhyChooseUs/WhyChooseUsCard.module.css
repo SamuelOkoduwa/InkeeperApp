@@ -67,12 +67,22 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  width: 91px;
-  height: 24px;
-  gap: 0px;
-  opacity: 0px;
   color: #0041e4;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.arrow {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrowlearnmore {
+  width: Hug (171px) px;
+  height: Hug (48px) px;
+  border-radius: 8px 0px 0px 0px;
+  display: inline-flex;
+  align-items: center;
 }
 .description {
   font-family: Poppins;
