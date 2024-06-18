@@ -3,6 +3,7 @@
     src: url(../../assets/Images/Poppins-Variable.ttf);
 }
 
+/* STYLING */
 * {
     margin: 0%;
     padding: 0%;
@@ -17,17 +18,13 @@
 }
 
 .hero-head {
-    font-size: 45px;
     font-weight: 800;
-    line-height: 64px;
     color: #50585F;
 }
 .hero-head span {
     color: #0041E4;
     display: inline-block;
     animation: slideInFromBottom .3s ease-in-out;
-    position: relative;
-    height: 65px;
 }
 
 @keyframes slideInFromBottom {
@@ -45,9 +42,7 @@
 }
 
 .hero-text {
-    font-size: 22.5px;
     font-weight: 400;
-    line-height: 32px;
     color: #5F6974;
     margin-top: 30px;
 }
@@ -57,26 +52,18 @@
 }
 
 .hero-btn {
-    width: 189px;
-    height: 56px;
     border-radius: 8px;
-    padding: 16px 32px;
     background-color: #002CB0;
     border: 0px;
     color: #E4F5FF;
-    font-size: 18px;
     font-weight: 400;
-    margin-top: 80px;
 }
 .hero-btn:hover {
     background-color: #0041E4;
     border-bottom: 2px solid #002E44;
 }
 
-.text-section {
-    padding-left: 80px;
-    padding-top: 100px;
-}
+
 
 .img-section img{
     display: block;
@@ -99,43 +86,31 @@
 }
 .eighty {
     display: flex;
-    width: 408px;
-    height: 88px;
     padding: 16px 20px;
     background-color: #F5F8F8;
     border-radius: 8px;
     position: absolute;
-    top: 0%;
-    left: 0%;
     box-shadow: 0px 4px 6px -4px #1018281F;
     box-shadow: 0px 10px 16px -3px #1018281F;
 }
 
 .ninety {
     display: flex;
-    width: 451px;
-    height: 88px;
     padding: 16px 20px;
     background-color: #F5F8F8;
     border-radius: 8px;
     position: absolute;
     top: 90%;
-    left: 15%;
     box-shadow: 0px 4px 6px -4px #1018281F;
     box-shadow: 0px 10px 16px -3px #1018281F;
 
 }
 
 .thousand {
-    width: 133px;
-    height: 156px;
-    padding: 16px 20px;
     background-color: #F5F8F8;
     border-radius: 8px;
     text-align: center;
     position: absolute;
-    top: 10%;
-    right: 0%;
     box-shadow: 0px 4px 6px -4px #1018281F;
     box-shadow: 0px 10px 16px -3px #1018281F;
 
@@ -143,13 +118,11 @@
 
 .fun-comment {
     color: #50585F;
-    font-size: 18px;
     font-weight: 600;
     line-height: 24px;
-    padding-top: 20px;
 }
 .fun-comment span {
-    font-size: 12px;
+    /* font-size: 12px; */
     font-weight: 400;
     line-height: 16px;
     color: #8593A5;
@@ -161,15 +134,411 @@
 
 .comment {
     color: #50585F;
-    font-size: 18px;
     font-weight: 600;
     line-height: 24px;
     margin-left: 20px;
 }
 .comment span {
-    font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     color: #8593A5;
 }
 
+
+/* RESPONSIVENESS FOR VARIOUS SCREEN SIZES */
+
+@media  (max-width: 480px) {
+    .hero-text {
+        padding-top: 0px;
+    }
+    
+    .heroMain {
+        padding-top: 0px;
+    }
+
+    .text-section {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hero-head {
+        font-size: 30px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hero-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 140px;
+        height: 56px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .section-two {
+        margin-top: 20px;
+    }
+
+    .eighty {
+        width: 280px;
+        height: 70px;
+        top: 15px;
+        left: 15px;
+    }
+    .ninety {
+        width: 280px;
+        height: 90px;
+        top: 90%;
+        right: 10%;
+    }
+
+    .thousand {
+        width: 115px;
+        height: 130px;
+        padding: 10px;
+        top: 33%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .fun-comment span {
+        font-size: 10px;
+    }
+
+    .comment {
+        font-size: 10px;
+    }
+    .comment span {
+        font-size: 8px;
+    }
+
+    .img-section img {
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+    .text-section {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-head {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 13px 25px;
+        font-size: 15px;
+    }
+
+    .eighty {
+        width: 410px;
+        height: 70px;
+        top: 0%;
+        left: 0%;
+    }
+    .ninety {
+        width: 451px;
+        height: 70px;
+        top: 90%;
+        left: 10%;
+    }
+
+    .thousand {
+        width: 115px;
+        height: 130px;
+        padding: 10px;
+        top: 10%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 18px;
+        padding-top: 12px;
+    }
+
+    .comment {
+        font-size: 18px;
+    }
+    .comment span {
+        font-size: 14px;
+    }
+
+    .img-section img {
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+
+    .text-section {
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .hero-head {
+        font-size: 40px;
+        line-height: 64px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero-btn {
+        margin-top: 20px;
+        width: 189px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .eighty {
+        width: 408px;
+        height: 88px;
+        top: 0%;
+        left: 0%;
+    }
+    .ninety {
+        width: 451px;
+        height: 88px;
+        top: 90%;
+        left: 15%;
+    }
+
+    .thousand {
+        width: 133px;
+        height: 145px;
+        padding: 16px 20px;
+        top: 10%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .comment {
+        font-size: 18px;
+    }
+    .comment span {
+        font-size: 14px;
+    }
+
+    .img-section img {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .text-section {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .hero-head {
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 13px 25px;
+        font-size: 15px;
+    }
+
+    .eighty {
+        width: 310px;
+        height: 70px;
+        top: 0%;
+        left: 0%;
+    }
+    .ninety {
+        width: 330px;
+        height: 60px;
+        padding: 0%;
+        top: 90%;
+        left: 5%;
+    }
+
+    .thousand {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 12px;
+        padding-top: 1px;
+    }
+
+    .comment {
+        font-size: 12px;
+    }
+    .comment span {
+        font-size: 10px;
+    }
+
+    .img-section img {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .text-section {
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+
+    .hero-head {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .hero-text {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .hero-btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 15px;
+    }
+
+    .eighty {
+        width: 310px;
+        height: 70px;
+        top: 0%;
+        left: 0%;
+    }
+    .ninety {
+        width: 330px;
+        height: 60px;
+        padding: 0%;
+        top: 90%;
+        left: 5%;
+    }
+
+    .thousand {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 12px;
+        padding-top: 1px;
+    }
+
+    .comment {
+        font-size: 12px;
+    }
+    .comment span {
+        font-size: 10px;
+    }
+
+    .img-section img {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-section {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .hero-head {
+        font-size: 45px;
+        line-height: 64px;
+    }
+
+    .hero-text {
+        font-size: 22.5px;
+        line-height: 32px;
+    }
+
+    .hero-btn {
+        margin-top: 80px;
+        width: 189px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    .eighty {
+        width: 408px;
+        height: 88px;
+        top: 0%;
+        left: 0%;
+    }
+    .ninety {
+        width: 451px;
+        height: 88px;
+        padding: 0%;
+        top: 90%;
+        left: 15%;
+    }
+
+    .thousand {
+        width: 133px;
+        height: 156px;
+        padding: 16px 20px;
+        top: 10%;
+        right: 0%;
+    }
+
+    .fun-comment {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .comment {
+        font-size: 18px;
+    }
+    .comment span {
+        font-size: 14px;
+    }
+}
