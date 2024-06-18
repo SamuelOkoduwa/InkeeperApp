@@ -45,3 +45,8 @@
   opacity: 0px;
   background: #f5f8f8;
 }
+@media (max-width: 600px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}
