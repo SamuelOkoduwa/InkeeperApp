@@ -33,18 +33,16 @@ function Pricing() {
     
     </div> */}
       <div style={{ marginTop: "96px" }}>
-        <div className="row justify-content-center">
-          <div className="col-md-6 col-lg-4 mb-4">
-            <div className="card border border-0 shadow">
+        <div className="row justify-content-center ">
+          <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
+            <div className="card w-100 border border-0 shadow">
               <div className={styles.popularIcon}>
-                {/* <div className={styles.vectorArrowDiv}> */}
                 <div className={styles.vectorArrow}>
                   <img className={styles.vectorArrowImg} src={vectorArrow} />
                   <p style={{ fontSize: "14px", color: "#0049FF" }}>
                     Most popular
                   </p>
                 </div>
-                {/* </div> */}
               </div>
               <PaymentPlan
                 title="Learn Now Pay Later"
@@ -68,8 +66,8 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4 mb-4">
-            <div className="card border border-0 shadow">
+          <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Best Value"
                 subTitle="One time payment"
@@ -91,12 +89,12 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4 mb-4">
-            <div className="card border border-0 shadow">
+          <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
-                price="N130, 000 x 2"
+                price="N130,000 x 2"
                 feature1="Payment in 1st and 7th week"
                 feature2="Access to all facilitators live classes"
                 feature3="Learn and get internship slots immediately"
@@ -114,8 +112,8 @@ function Pricing() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4 mb-4">
-            <div className="card border border-0 shadow">
+          <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
