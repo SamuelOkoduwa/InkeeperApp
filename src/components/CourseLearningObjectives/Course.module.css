@@ -1,23 +1,24 @@
-.CourseLearningObjective{
+.CourseLearningObjective {
 display: flex;
 align-items: normal;
 background-color: #f5f8f8;
 padding: 100px;
+margin-top: 20;
 
 }
 
-.learning-objectives {
+.learningobjectives {
 padding-left: 120px;
 padding-top: 24px;
 padding-right: 80px;
 padding-bottom: 24px;
 }
 
-.Image-Cont {
+.ImageCont {
 border-radius: 20px
 }
 
-.Image-Cont img{
+.ImageCont img{
   width: 500px;
   height: 550px;
   padding: auto;
@@ -31,7 +32,9 @@ font-weight: 800;
 display: flex;
 align-items: normal;
 width: 600px;
+
 }
 .text {
-  font-size: large;
+  font-size: larger;
+margin-left: 16px;
 }
