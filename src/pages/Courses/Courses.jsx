@@ -7,7 +7,7 @@ function Courses() {
 	<div>
 	  <GroupExample />
 	  <ContactUs />
-	</div>
+cle	</div>
   )
 }
 
