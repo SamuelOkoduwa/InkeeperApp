@@ -6,7 +6,7 @@ import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
-import MeetTeam from "./components/MeetTeam/MeetTeam"
+
 function App() {
   return (
    
@@ -24,7 +24,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     
-    <MeetTeam />
+    
     </div>
   
     
