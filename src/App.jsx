@@ -1,5 +1,6 @@
 import React from "react"
 import NavBar from "./components/NavBar/NavBar"
+import Form from "./components/Form/Form"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Courses from "./pages/Courses/Courses"
@@ -15,7 +16,6 @@ function App() {
    <div>
     <BrowserRouter>
       <NavBar />
-
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -24,8 +24,7 @@ function App() {
         <Route path="/applyNow" element={<ApplyNow />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
-    
+    </BrowserRouter>    
     </div>
   );
 }
