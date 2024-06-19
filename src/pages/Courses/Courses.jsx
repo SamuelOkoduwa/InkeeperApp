@@ -1,16 +1,12 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Pricing from '../../components/Pricing/Pricing'
-
+import GroupExample from '../../components/Faq/Faq'
+import ContactUs from '../../components/ContactUs/ContactUs'
 
 function Courses() {
   return (
 	<div>
-		<Container>
-			Welcome to Courses page
-			<Pricing/>
-		</Container>
-	  
+	  <GroupExample />
+	  <ContactUs />
 	</div>
   )
 }

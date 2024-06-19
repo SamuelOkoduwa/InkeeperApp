@@ -1,15 +1,19 @@
 import React from "react"
 import NavBar from "./components/NavBar/NavBar"
+import Form from "./components/Form/Form"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
+import Footer from "./components/Footer/footer"
 
 function App() {
   return (
-    <div>
+   
+   
+   <div>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -19,9 +23,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/applyNow" element={<ApplyNow />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </BrowserRouter>    
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

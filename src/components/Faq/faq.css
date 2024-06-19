@@ -1,0 +1,169 @@
+.Faq {
+  background-color: #fef8ee;
+  margin: 16px 0;
+}
+
+.faq-header {
+  margin: 16px 0;
+  padding: 10px;
+  background-color: #fef8ee;
+  border-radius: 4px;
+}
+
+.faq-header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #101828;
+}
+
+.faq-header p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.text-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.text-column {
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.text-column h2 {
+  margin-top: 0;
+  color: #101828;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.text-column p {
+  margin: 16px 0;
+  color: #667085;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.faq-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  padding: 32px;
+  background-color: #fef8ee;
+  border-radius: 4px;
+}
+
+.faq-footer h2 {
+  margin-top: 0;
+  color: #101828;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.faq-footer p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #667085;
+}
+
+@media (max-width: 1200px) {
+  .text-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Faq {
+    background-color: #fef8ee;
+    width: 100%;
+  }
+  .faq-header h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .faq-header p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .text-group {
+    grid-template-columns: 1fr;
+  }
+
+  .text-column {
+    padding: 12px;
+  }
+
+  .text-column h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text-column p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .faq-footer {
+    padding: 16px;
+  }
+
+  .faq-footer h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .faq-footer p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Faq {
+    background-color: #fef8ee;
+    width: 100%;
+  }
+  .faq-header h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .faq-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text-column h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .text-column p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .faq-footer h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faq-footer p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

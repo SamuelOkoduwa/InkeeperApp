@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../LandingPageHero/LandingPageHero.css";
+import "../../components/LandingPageHero/LandingPageHero.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Software from "../../assets/Images/soft-dev.png";
@@ -72,7 +72,7 @@ function LandingPageHero() {
           <Col xs={12} md={6}>
             <div className="section-two">
               <div className="img-section">
-                <img
+                <img className="img-fluid"
                   key={currentImageIndex}
                   src={images[currentImageIndex]}
                   alt="Slideshow"
