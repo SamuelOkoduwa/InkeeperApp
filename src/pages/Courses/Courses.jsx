@@ -1,12 +1,11 @@
 import React from 'react'
-import GroupExample from '../../components/Faq/Faq'
-import CourseLearningObjective from "../../components/CourseLearningObjectives/CourseLearningObjective";
+import Pricing from '../../components/Pricing/Pricing'
 
 function Courses() {
   return (
-	<div>
-		<CourseLearningObjective/>
-	  <GroupExample /> 	
+	<div className='container'>
+	  Welcome to Courses page
+	  <Pricing />
 	</div>
   )
 }
