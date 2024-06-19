@@ -14,7 +14,7 @@ const WhyChooseUsCard = ({ title, description, icon, link, arrow }) => {
             Learn more */}
           <Link to={link} className={style.learnMore}>
             Learn more
-            <img src={arrow} className={style.arrow} />
+            <img src={arrow} alt="arrow icon" className={style.arrow} />
           </Link>
         </div>
       </div>
