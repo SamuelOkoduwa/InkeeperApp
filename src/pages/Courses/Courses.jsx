@@ -6,7 +6,7 @@ function Courses() {
   return (
 	<div>
 		<CourseLearningObjective/>
-	  <GroupExample />
+	  <GroupExample /> 	
 	</div>
   )
 }
