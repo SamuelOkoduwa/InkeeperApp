@@ -42,6 +42,22 @@
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.text-column h2::before {
+  content: "+";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.text-column h2.active::before {
+  content: "-";
 }
 
 .text-column p {
