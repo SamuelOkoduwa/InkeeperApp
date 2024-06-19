@@ -3,6 +3,7 @@ import LandingPageHero from '../../components/LandingPageHero/LandingPageHero';
 import GroupExample from '../../components/Faq/Faq';
 import OurCourses from '../../components/OurCourses/OurCourses';
 import Partner from '../../components/Partners/Partners'
+import WhyChooseUsGrid from '../../components/WhyChooseUs/WhyChooseUsGrid'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
     <LandingPageHero />
     <Partner />
     <OurCourses />
+    <WhyChooseUsGrid />
     <GroupExample />
       
   </div>
