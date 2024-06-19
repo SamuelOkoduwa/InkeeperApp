@@ -39,42 +39,42 @@ const learningOptions = [
     arrow: "src/assets/images/arrow-right (1).png",
     styleName: "globallyCurated",
   },
-  {
-    title: "Expert Mentorship & Collaboration",
-    description:
-      "Receive guidance and support from experienced professionals in your chosen tech field.",
-    icon: "src/assets/images/Frame 82 (3).png",
-    link: "src/components/WhyChooseUs/Expertmentorship.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
-    styleName: "expertMentorship",
-  },
-  {
-    title: "Locally Tailored Focus",
-    description:
-      "Benefit from content that addresses the specific needs and context of the African tech market.",
-    icon: "src/assets/images/Frame 82 (4).png",
-    link: "src/components/WhyChooseUs/Locallytailored.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
-    styleName: "locallyTailored",
-  },
-  {
-    title: "Flexible Payment Plans",
-    description:
-      "Choose a payment plan that fits your budget, making quality tech education accessible to everyone.",
-    icon: "src/assets/images/Frame 82 (5).png",
-    link: "src/components/WhyChooseUs/Flexiblepayment.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
-    styleName: "flexiblePayment",
-  },
-  {
-    title: "Entrepreneurship Support",
-    description:
-      "Explore opportunities to launch your own tech-driven venture.",
-    icon: "src/assets/images/Frame 82 (6).png",
-    link: "src/components/WhyChooseUs/Entrepreneurshipsupport.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
-    styleName: "entrepreneurshipSupport",
-  },
+  // {
+  //   title: "Expert Mentorship & Collaboration",
+  //   description:
+  //     "Receive guidance and support from experienced professionals in your chosen tech field.",
+  //   icon: "src/assets/images/Frame 82 (3).png",
+  //   link: "src/components/WhyChooseUs/Expertmentorship.jsx",
+  //   arrow: "src/assets/images/arrow-right (1).png",
+  //   styleName: "expertMentorship",
+  // },
+  // {
+  //   title: "Locally Tailored Focus",
+  //   description:
+  //     "Benefit from content that addresses the specific needs and context of the African tech market.",
+  //   icon: "src/assets/images/Frame 82 (4).png",
+  //   link: "src/components/WhyChooseUs/Locallytailored.jsx",
+  //   arrow: "src/assets/images/arrow-right (1).png",
+  //   styleName: "locallyTailored",
+  // },
+  // {
+  //   title: "Flexible Payment Plans",
+  //   description:
+  //     "Choose a payment plan that fits your budget, making quality tech education accessible to everyone.",
+  //   icon: "src/assets/images/Frame 82 (5).png",
+  //   link: "src/components/WhyChooseUs/Flexiblepayment.jsx",
+  //   arrow: "src/assets/images/arrow-right (1).png",
+  //   styleName: "flexiblePayment",
+  // },
+  // {
+  //   title: "Entrepreneurship Support",
+  //   description:
+  //     "Explore opportunities to launch your own tech-driven venture.",
+  //   icon: "src/assets/images/Frame 82 (6).png",
+  //   link: "src/components/WhyChooseUs/Entrepreneurshipsupport.jsx",
+  //   arrow: "src/assets/images/arrow-right (1).png",
+  //   styleName: "entrepreneurshipSupport",
+  // },
 ];
 
 const WhyChooseUsGrid = () => {

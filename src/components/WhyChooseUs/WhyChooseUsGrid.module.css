@@ -40,11 +40,20 @@
 .App {
   width: Hug (1, 428px) px;
   height: Hug (1, 012px) px;
-  padding: 80px 88px 80px 88px;
+  padding: 80px 88px;
   gap: 40px;
   opacity: 0px;
   background: #f5f8f8;
 }
+
+/* @media (max-width: 600px) {
+  .AppHeader {
+    padding: 40px 20px;
+  } 
+  .App {
+    padding: 40px 20px;
+  } 
+} */
 @media (max-width: 600px) {
   .featureGrid {
     grid-template-columns: 1fr;
