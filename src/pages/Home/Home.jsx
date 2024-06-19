@@ -5,6 +5,7 @@ import OurCourses from '../../components/OurCourses/OurCourses';
 import Partner from '../../components/Partners/Partners'
 import WhyChooseUsGrid from '../../components/WhyChooseUs/WhyChooseUsGrid'
 import AmazingCompany from '../../components/AmazingCompaniesIntern/AmazingCompany';
+import ContactUs from '../../components/ContactUs/ContactUs';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <WhyChooseUsGrid />
     <GroupExample />
     <AmazingCompany />
+    <ContactUs />
       
   </div>
   )
