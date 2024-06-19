@@ -7,36 +7,36 @@ const learningOptions = [
     title: "Blended Learning",
     description:
       "Learn at your own speed and convenience with our comprehensive online learning modules.",
-    icon: "src/assets/images/Frame 82.png",
+    icon: "/Images/Frame 82.png",
     link: "src/components/WhyChooseUs/Blendedlearning.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
+    arrow: "/Images/arrow-right (1).png",
     styleName: "blendedLearning",
   },
   {
     title: "Instructor-Led Sessions",
     description:
       "Gain in-depth knowledge and clarify concepts through interactive live sessions with experienced instructors.",
-    icon: "src/assets/images/secondf.png.png",
+    icon: "/Images/secondf.png.png",
     link: "src/components/WhyChooseUs/Instructorled.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
+    arrow: "/Images/arrow-right (1).png",
     styleName: "instructorLedSessions",
   },
   {
     title: "Peer-to-Peer Collaboration",
     description:
       "Network and learn from fellow trainees in a supportive online community.",
-    icon: "src/assets/images/Frame 82 (1).png",
+    icon: "/Images/Frame 82 (1).png",
     link: "src/components/WhyChooseUs/Peercollaboration.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
+    arrow: "/Images/arrow-right (1).png",
     styleName: "peerCollaboration",
   },
   {
     title: "Globally Curated Content",
     description:
       "Access latest industry-relevant curriculum from leading tech organisations.",
-    icon: "src/assets/images/Frame 82 (2).png",
+    icon: "/Images/Frame 82 (2).png",
     link: "src/components/WhyChooseUs/Globallycurated.jsx",
-    arrow: "src/assets/images/arrow-right (1).png",
+    arrow: "/Images/arrow-right (1).png",
     styleName: "globallyCurated",
   },
   // {

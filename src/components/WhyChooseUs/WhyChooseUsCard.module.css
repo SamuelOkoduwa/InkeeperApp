@@ -7,6 +7,7 @@
   background: #e4f5ff;
   text-align: center;
   transition: box-shadow 0.3s ease;
+  overflow: hidden;
 }
 .icon {
   width: Hug (64px) px;
