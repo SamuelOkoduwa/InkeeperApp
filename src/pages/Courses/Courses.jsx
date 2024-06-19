@@ -1,10 +1,11 @@
 import React from 'react'
-import GroupExample from '../../components/Faq/Faq'
+import Pricing from '../../components/Pricing/Pricing'
 
 function Courses() {
   return (
-	<div>
-	  <GroupExample />
+	<div className='container'>
+	  Welcome to Courses page
+	  <Pricing />
 	</div>
   )
 }

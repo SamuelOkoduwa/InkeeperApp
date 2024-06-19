@@ -1,7 +1,19 @@
+
+*{
+	background: #F5F8F8;
+
+}
+
 .nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-left: 90px;
+	margin-right: 15rem;
+	margin-top: 40px;
+	font-size: larger;
+
+
 }
 
 .ul {
@@ -12,5 +24,25 @@
 
 nav a{
 	text-decoration: none;
-	color: #000;
+	color: #73808F;
+   margin-left: 30px;
+}
+
+.btn{
+	background: #002CB0;
+	color: #E4F5FF;
+padding: 5px;
+border-radius: 5px;
+}
+
+.caret{
+	position: absolute;
+	display: block;
+}
+
+@media only screen and (max-width:800px) {
+	.nav ul li btn {
+		width: fit-content;
+		height:fit-content;
+	}
 }

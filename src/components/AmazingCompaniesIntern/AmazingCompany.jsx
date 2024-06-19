@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./AmazingCompany.module.css";
+import styles from "./AmazingCompanies.module.css";
 import thgear from "../../assets/Images/thgear.png";
 import digi from "../../assets/Images/digi.png";
 import barter from "../../assets/Images/barter.png";

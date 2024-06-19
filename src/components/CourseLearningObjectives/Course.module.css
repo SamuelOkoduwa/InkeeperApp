@@ -1,0 +1,40 @@
+.CourseLearningObjective {
+display: flex;
+align-items: normal;
+background-color: #f5f8f8;
+padding: 100px;
+margin-top: 20;
+
+}
+
+.learningobjectives {
+padding-left: 120px;
+padding-top: 24px;
+padding-right: 80px;
+padding-bottom: 24px;
+}
+
+.ImageCont {
+border-radius: 20px
+}
+
+.ImageCont img{
+  width: 500px;
+  height: 550px;
+  padding: auto;
+}
+.heading {
+font-size: x-large;
+font-weight: 800;
+}
+
+.textbox {
+display: flex;
+align-items: normal;
+width: 600px;
+
+}
+.text {
+  font-size: larger;
+margin-left: 16px;
+}

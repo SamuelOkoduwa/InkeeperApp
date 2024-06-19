@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 import { Button } from "react-bootstrap";
 
-function footer() {
+function Footer() {
   return (
     <div className="main-footer bg-primary-subtle justify-content-end ">
       <div className="container">
@@ -64,4 +64,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;
