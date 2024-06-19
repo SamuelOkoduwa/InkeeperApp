@@ -4,7 +4,7 @@ import NavBar from '../../components/NavBar/NavBar'
 
 function Courses() {
   return (
-	<div>
+	<div className='container'>
 	  Welcome to Courses page
 	  <Pricing />
 	</div>

@@ -28,7 +28,7 @@ const paymentPlan = (props) => {
   } = props;
 
   const style = {
-    border: "none",
+    // border: "none",
     outline: "none",
     width: "100%",
     backgroundColor: bgColor,
@@ -138,7 +138,7 @@ const paymentPlan = (props) => {
           <div>{feature6}</div>
         </div> */}
       </div>
-      <div style={{margin: "0 32px"}}>
+      <div className="mybtn" style={{margin: "0 32px"}}>
         <button className="btn mb-4" style={style}>Apply Now</button>
       </div>
     </>

@@ -30,8 +30,6 @@ text-align: center;
 	right: -30px;
 }
 
-
-
 .vectorArrowImg {
 	width: 61.96px;
 	height: 30px;
@@ -84,4 +82,12 @@ text-align: center;
 	width: 20px;
 	border-radius: 50%;
 	background-color: #D1FADF;
+}
+
+@media screen and (max-width: 480px) {
+	.popularIcon {
+		
+		
+		right: 0;
+	}
 }
