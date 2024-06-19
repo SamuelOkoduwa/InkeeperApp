@@ -5,8 +5,8 @@ import About from "./pages/About/About"
 import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
-import footer from "./components/Footer/footer"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
+import Footer from "./components/Footer/footer"
 
 function App() {
   return (
@@ -20,8 +20,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/applyNow" element={<ApplyNow />} />
       </Routes>
-      <footer />
+      <Footer />
     </BrowserRouter>
+    
     </div>
   );
 }
