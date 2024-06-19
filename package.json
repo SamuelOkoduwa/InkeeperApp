@@ -10,15 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "bootstrap": "^5.3.3",
-=======
+  
     "create-vite": "^5.2.3",
->>>>>>> stephen
-=======
     "bootstrap": "^5.3.3",
->>>>>>> AdebayoSamuel
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
