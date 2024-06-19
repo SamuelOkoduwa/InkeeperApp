@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import { useMediaQuery } from "react-responsive";
 import styles from "./Testimonials.module.css";
-import Zoe from "../../assets/images/Zoe.png";
-import Mantis from "../../assets/images/Mantis.png";
-import man from "../../assets/images/man.png";
+import Zoe from "../../assets/Images/Zoe.png";
+import Mantis from "../../assets/Images/Mantis.png";
+import man from "../../assets/Images/man.png";
 
 const testimonialsData = [
   {

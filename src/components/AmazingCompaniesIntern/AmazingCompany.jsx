@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./AmazingCompany.module.css";
-import thgear from "../../assets/images/thgear.png";
-import digi from "../../assets/images/digi.png";
-import barter from "../../assets/images/barter.png";
-import edu from "../../assets/images/edu.png";
-import LM from "../../assets/images/LM.png";
-import Bank from "../../assets/images/Bank.png";
-import lance from "../../assets/images/lance.png";
+import thgear from "../../assets/Images/thgear.png";
+import digi from "../../assets/Images/digi.png";
+import barter from "../../assets/Images/barter.png";
+import edu from "../../assets/Images/edu.png";
+import LM from "../../assets/Images/LM.png";
+import Bank from "../../assets/Images/Bank.png";
+import lance from "../../assets/Images/lance.png";
 
 function AmazingCompany() {
   return (
