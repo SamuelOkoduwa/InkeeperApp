@@ -6,11 +6,13 @@
 }
 
 .writeup {
+  /* margin-top: 2px; */
   /* margin-bottom: 20px; */
   /* margin-top: auto; */
 }
 
 .heading {
+  margin-top: 2px;
   color: grey;
   font-weight: bolder;
   font-size: larger;
@@ -24,7 +26,7 @@
 
 .imagecontainer {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 10px;
