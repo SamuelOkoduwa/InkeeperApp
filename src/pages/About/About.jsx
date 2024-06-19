@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+import '../../components/ContactUs/ContactUs'
 import ContactUs from '../../components/ContactUs/ContactUs'
 
 function About() {
