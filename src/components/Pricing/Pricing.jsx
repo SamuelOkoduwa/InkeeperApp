@@ -117,7 +117,7 @@ function Pricing() {
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
-                price="N100, 000 x 3"
+                price="N100,000 x 3"
                 feature1="Payment in 1st and 7th week"
                 feature2="Access to all facilitators live classes"
                 feature3="Learn and get internship slots immediately"
