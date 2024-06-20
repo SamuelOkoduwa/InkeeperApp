@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import "./OurCourses.module.css";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import OurCoursesCss from  "./OurCourses.module.css";
 
 function CardContainer(props) {
   // eslint-disable-next-line react/prop-types
@@ -16,12 +16,12 @@ function CardContainer(props) {
   } = props;
 
   return (
-    <Card className=" card" style={{ width: "19rem" }}>
+    <Card className={OurCoursesCss.card} style={{ width: "19rem" }}>
       <Card.Img className="p-1" variant="top" src={cardImage} />
       <Card.Body>
         <Card.Title className="title fs-4 ">{cardTitle}</Card.Title>
 
-        <div className="rating">
+        <div className={OurCoursesCss.rating}>
           <div>
             <img className="" style={{ width: "4rem" }} src={cardRating}></img>
           </div>
@@ -31,24 +31,24 @@ function CardContainer(props) {
           </div>
         </div>
 
-        <div className="cardPrice">
+        <div className={OurCoursesCss.cardPrice}>
           <p> {cardPrice}</p>
         </div>
 
-        <Card.Text className="cardText">{cardText}</Card.Text>
-        <div className="cardLearningMode ">
+        <Card.Text className={OurCoursesCss.cardText}>{cardText}</Card.Text>
+        <div className={OurCoursesCss.cardLearningMode}>
           <h6>Learning Mode</h6>
-          <div className="cardBtn">
-            <Button className="btnNAme" variant="primary">
+          <div className={OurCoursesCss.cardBtn}>
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Physical
             </Button>
-            <Button className="btnNAme hybrid" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Hybrid
             </Button>
-            <Button className="btnNAme" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Virtual
             </Button>
-            <Button className="btnNAme" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Weekends
             </Button>
           </div>
@@ -73,9 +73,9 @@ const OurCourses = () => {
         <div className="row">
           <div className="col mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/IMG.png"
+              cardImage="/src/assets/Images/OurCoursesImg/IMG.png"
               cardTitle={"FrontEnd Development"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -84,9 +84,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/data-Analysis.png"
+              cardImage="/src/assets/Images/OurCoursesImg/data-Analysis.png"
               cardTitle={"Data Analysis"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -95,9 +95,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/UI/UX.png"
+              cardImage="/src/assets/Images/OurCoursesImg/UX.png"
               cardTitle={"UI/UX Design"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -106,20 +106,20 @@ const OurCourses = () => {
 
           <div className="col  mt-2 ">
             <CardContainer
-              cardImage="/src/assets/Images/cyber-Security.png"
+              cardImage="/src/assets/Images/OurCoursesImg/cyber-Security.png"
               cardTitle={"Cyber Security"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
             />
           </div>
 
-          <div className="col col-lg-3 mt-2 ">
+          <div className="col  mt-2 ">
             <CardContainer
-              cardImage="/src/assets/Images/Digital marketing.png"
+              cardImage="/src/assets/Images/OurCoursesImg/Digital marketing.png"
               cardTitle={"Digital Marketing"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -127,9 +127,9 @@ const OurCourses = () => {
           </div>
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/Data science.png"
+              cardImage="/src/assets/Images/OurCoursesImg/Data science.png"
               cardTitle={"Data Science/AI"}
-              cardRating={"/src/assets/Images/Rating.png"}
+              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
