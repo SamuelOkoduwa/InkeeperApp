@@ -12,13 +12,13 @@ import { FaLinkedin } from "react-icons/fa";
 
 function footer() {
   return (
-    <div className="main-footer bg-primary-subtle fixed-bottom py-5">
-      <div className="container">
-        <div className=" row">
+    <div className="main-footer width-100">
+      <div className="bg-primary-subtle pt-5 pb-4">
+        <div className="row text-md-left">
           {/* column 1 */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h4>Basic</h4>
-            <ul className="pt-3 list-unstyled">
+            <ul className="list-unstyled">
               <li>About us</li>
               <li>Contact Us</li>
               <li>Privacy Policy</li>
@@ -27,9 +27,9 @@ function footer() {
             </ul>
           </div>
           {/* column 2 */}
-          <div className="col-md-3 col-sm-6">
+          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h4>Courses</h4>
-            <ul className="pt-3 list-unstyled">
+            <ul className="list-unstyled">
               <li>Frontend Development</li>
               <li>Digital Marketing</li>
               <li>UI/UX Design</li>
@@ -38,16 +38,16 @@ function footer() {
             </ul>
           </div>
           {/* column 3 */}
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h4>Contact Us</h4>
-            <ul className="pt-3 list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <FaLocationDot className="me-3" />
                 Innkeeper Hackerspace, 11 Colin Onabule Crescent, Diamond
                 Estate, Magodo Phase 2
               </li>
               <li>
-                <FaEnvelope className="me-3" />
+                <FaEnvelope className="me-2" />
                 Academy@innkeeper.work
               </li>
               <li>
@@ -57,9 +57,9 @@ function footer() {
             </ul>
           </div>
           {/* column 4 */}
-          <div className="col-md-2 col-sm-6">
+          <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h4>Social Media</h4>
-            <ul className="pt-3 list-unstyled">
+            <ul className="list-unstyled">
               <li>
                 <FaFacebookF className="me-2" />
                 Facebook
@@ -80,9 +80,9 @@ function footer() {
           </div>
         </div>
         {/* footer bottom */}
-        <div className="container">
-          <div className="footer-bottom text-center py-5">
-            <p className="text-xs-center">
+        <div className="row footer-bottom text-center py-md-5">
+          <div className="col-md-12 col-lg-12">
+            <p className="text-center">
               &copy;{new Date().getFullYear()} Innkeeper.work - All Right
               Reserved
             </p>

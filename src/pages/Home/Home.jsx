@@ -1,12 +1,13 @@
-import React from 'react'
-import LandingPageHero from '../../components/LandingPageHero/LandingPageHero'
-
+import React from "react";
+import LandingPageHero from "../../components/LandingPageHero/LandingPageHero";
+import Footer from "../../components/Footer/footer";
 function Home() {
   return (
-	<div>
-    <LandingPageHero />
-  </div>
-  )
+    <div>
+      <LandingPageHero />
+      <Footer />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
