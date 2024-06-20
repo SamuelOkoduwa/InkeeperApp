@@ -6,9 +6,9 @@ import Software from "../../assets/Images/soft-dev.png";
 import Designer from "../../assets/Images/prod-des.png";
 import Analyst from "../../assets/Images/data-analyst.png";
 import Cyber from "../../assets/Images/cyber-sec.png";
-import Eighty from "../../assets/Images/80.png"
-import Ninety from "../../assets/Images/90.png"
-import Thousand from "../../assets/Images/1000.png"
+import Eighty from "../../assets/Images/80.png";
+import Ninety from "../../assets/Images/90.png";
+import Thousand from "../../assets/Images/90.png";
 
 function LandingPageHero() {
   // Text Slide
@@ -33,7 +33,6 @@ function LandingPageHero() {
     setCurrentName(names[index]);
   }, [index, names]);
 
-
   //  Image Slide
   const images = [Software, Designer, Analyst, Cyber];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -45,7 +44,6 @@ function LandingPageHero() {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [images.length]);
-  
 
   // Output
   return (

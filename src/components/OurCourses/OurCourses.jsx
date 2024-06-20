@@ -1,12 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import "/src/assets/OurCourses.css";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./OurCourses.module.css";
 
 function CardContainer(props) {
   // eslint-disable-next-line react/prop-types
-  const { cardPrice, cardTitle, cardText, cardImage, cardRating, cardRatingText} = props;
+  const {
+    cardPrice,
+    cardTitle,
+    cardText,
+    cardImage,
+    cardRating,
+    cardRatingText,
+  } = props;
 
   return (
     <Card className=" card" style={{ width: "19rem" }}>
@@ -52,7 +59,6 @@ function CardContainer(props) {
     </Card>
   );
 }
-
 
 const OurCourses = () => {
   return (
@@ -129,7 +135,6 @@ const OurCourses = () => {
               cardPrice={"N450,000 • 12 weeks"}
             />
           </div>
-          
         </div>
       </div>
     </>

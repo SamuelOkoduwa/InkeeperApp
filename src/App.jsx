@@ -9,6 +9,7 @@ import ApplyNow from "./pages/ApplyNow/ApplyNow"
 import { Route, Routes, BrowserRouter} from "react-router-dom"
 import Footer from "./components/Footer/footer"
 
+
 function App() {
   return (
    
