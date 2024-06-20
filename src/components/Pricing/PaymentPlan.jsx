@@ -1,5 +1,4 @@
 import React from "react";
-// import styles from "./Pricing";
 import styles from "./Pricing.module.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
