@@ -11,8 +11,8 @@ function About() {
 		<Partners />
 		<AmazingCompany />
 		<MeetTeam />
-	  <GroupExample />
-	  <ContactUs />
+	  	<GroupExample />
+	  	<ContactUs />
 	</div>
   )
 }
