@@ -13,7 +13,7 @@
 nav ul {
   display: flex;
   align-items: center;
-  list-style: none;
+  list-style:none;
   gap: 20px;
 }
 
@@ -21,17 +21,26 @@ nav ul {
   margin: 0 1rem;
   color: #73808f;
 }
-nav li {
-}
 
 nav a {
-  text-decoration: none;
+	text-decoration: none;
+	color: #73808f;
+	font-size: larger;
 }
 
 .nav a:hover {
   background-color: #fff;
   color: blue;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.nav a:visited {
+color:purple;
+}
+
+.nav a:active{
+color:green;	
 }
 
 .menu_contacts {
