@@ -6,6 +6,7 @@
 }
 
 .writeup {
+  margin-left: 36px;
   /* margin-top: 2px; */
   /* margin-bottom: 20px; */
   /* margin-top: auto; */
@@ -16,10 +17,11 @@
   color: grey;
   font-weight: bolder;
   font-size: larger;
+  /* margin-left: 20px; */
 }
 
 .bodytext {
-  color: gray;
+  color: #73808f;
   font-size: small;
   margin-bottom: 40px;
 }
