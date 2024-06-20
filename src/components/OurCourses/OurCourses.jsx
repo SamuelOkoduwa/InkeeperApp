@@ -2,19 +2,19 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import "./OurCourses.Module.css";
+import OurCoursesCss from  "./OurCourses.module.css";
 
 function CardContainer(props) {
   // eslint-disable-next-line react/prop-types
   const { cardPrice, cardTitle, cardText, cardImage, cardRating, cardRatingText} = props;
 
   return (
-    <Card className=" card" style={{ width: "19rem" }}>
+    <Card className={OurCoursesCss.card} style={{ width: "19rem" }}>
       <Card.Img className="p-1" variant="top" src={cardImage} />
       <Card.Body>
         <Card.Title className="title fs-4 ">{cardTitle}</Card.Title>
 
-        <div className="rating">
+        <div className={OurCoursesCss.rating}>
           <div>
             <img className="" style={{ width: "4rem" }} src={cardRating}></img>
           </div>
@@ -24,24 +24,24 @@ function CardContainer(props) {
           </div>
         </div>
 
-        <div className="cardPrice">
+        <div className={OurCoursesCss.cardPrice}>
           <p> {cardPrice}</p>
         </div>
 
-        <Card.Text className="cardText">{cardText}</Card.Text>
-        <div className="cardLearningMode ">
+        <Card.Text className={OurCoursesCss.cardText}>{cardText}</Card.Text>
+        <div className={OurCoursesCss.cardLearningMode}>
           <h6>Learning Mode</h6>
-          <div className="cardBtn">
-            <Button className="btnNAme" variant="primary">
+          <div className={OurCoursesCss.cardBtn}>
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Physical
             </Button>
-            <Button className="btnNAme hybrid" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Hybrid
             </Button>
-            <Button className="btnNAme" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Virtual
             </Button>
-            <Button className="btnNAme" variant="primary">
+            <Button className={OurCoursesCss.btnNAme} variant="primary">
               Weekends
             </Button>
           </div>
