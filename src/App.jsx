@@ -1,6 +1,5 @@
 import React from "react"
 import NavBar from "./components/NavBar/NavBar"
-import Form from "./components/Form/Form"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Courses from "./pages/Courses/Courses"
