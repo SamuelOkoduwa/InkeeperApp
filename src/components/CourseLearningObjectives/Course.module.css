@@ -22,6 +22,7 @@ border-radius: 20px
   width: 500px;
   height: 550px;
   padding: auto;
+  flex-wrap: wrap;
 }
 .heading {
 font-size: x-large;
@@ -32,9 +33,34 @@ font-weight: 800;
 display: flex;
 align-items: normal;
 width: 600px;
-
 }
+
 .text {
   font-size: larger;
 margin-left: 16px;
+}
+
+.ProductDesign {
+display: flex;
+align-items: normal;
+background-color: #ffffff;
+padding: 100px;
+margin-top: 20;
+}
+
+.HeroText {
+align-items: normal;
+width: 600px;
+}
+
+.HeroImage {
+  width: 650px;
+  height: 600px;
+  padding: auto;
+  flex-wrap: wrap;
+}
+
+.Heroheading {
+  font-size: xx-large;
+font-weight: 800;
 }
