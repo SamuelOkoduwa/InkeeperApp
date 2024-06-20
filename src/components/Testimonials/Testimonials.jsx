@@ -16,65 +16,43 @@ const testimonialsData = [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
   },
   {
-    name: "Zoe Mantis",
-    role: "Founder, Alpha Group",
+    name: "John Doe",
+    role: "CEO, Beta Ltd",
     image: Mantis,
     testimonial:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+      "Dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores",
   },
   {
-    name: "Zoe Mantis",
-    role: "Founder, Alpha Group",
+    name: "Jane Smith",
+    role: "Manager, Gamma Inc",
     image: man,
     testimonial:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-  },
-  {
-    name: "Zoe Mantis",
-    role: "Founder, Alpha Group",
-    image: Zoe,
-    testimonial:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-  },
-  {
-    name: "Zoe Mantis",
-    role: "Founder, Alpha Group",
-    image: Mantis,
-    testimonial:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
-  },
-  {
-    name: "Zoe Mantis",
-    role: "Founder, Alpha Group",
-    image: man,
-    testimonial:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet",
   },
 ];
 
 const Testimonials = () => {
-  // Define breakpoints for different screen sizes
   const isSmallScreen = useMediaQuery({ query: "(max-width: 576px)" });
   const isMediumScreen = useMediaQuery({
     query: "(min-width: 577px) and (max-width: 768px)",
   });
   const isLargeScreen = useMediaQuery({ query: "(min-width: 769px)" });
 
-  // Determine the number of items per slide based on screen size
   const itemsPerSlide = isSmallScreen ? 1 : isMediumScreen ? 2 : 3;
 
-  // Function to chunk the testimonials data into groups of itemsPerSlide
   const chunkedTestimonialsData = (data, size) => {
-    let results = [];
-    while (data.length) {
-      results.push(data.splice(0, size));
+    const results = [];
+    for (let i = 0; i < data.length; i += size) {
+      results.push(data.slice(i, i + size));
     }
     return results;
   };
 
-  // Chunk the testimonials data into groups for the carousel
+  
+  const extendedTestimonialsData = [...testimonialsData, ...testimonialsData];
+
   const testimonialChunks = chunkedTestimonialsData(
-    [...testimonialsData],
+    extendedTestimonialsData,
     itemsPerSlide
   );
 
@@ -95,7 +73,7 @@ const Testimonials = () => {
               className={`d-flex justify-content-around ${styles.testimonialContainer}`}
             >
               {chunk.map((testimonial, testimonialIndex) => (
-                <div key={testimonialIndex} className={`${styles.testimonial}`}>
+                <div key={testimonialIndex} className={styles.testimonial}>
                   <div className={styles.testimonialInfo}>
                     <img
                       className={styles.testimonialImg}
