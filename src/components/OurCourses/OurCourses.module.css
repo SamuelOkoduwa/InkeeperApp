@@ -1,0 +1,62 @@
+.title {
+    margin-top: -15px;
+    margin-left: -10px;
+    font-weight: 600;
+
+}
+
+.rating {
+    display: flex;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.rating p {
+    font-size: 10px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.cardPrice {
+    margin-left: -10px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btnNAme {
+    font-size: 7px;
+    height: 30px;
+    width: 65px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #D3D6DC;
+    border-radius: 8px;
+    font-weight: 600;
+
+
+}
+
+.hybrid {
+    border: 1px solid #4C5ADC;
+    color: #4C5ADC;
+}
+
+
+.cardBtn {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5px ;
+
+}
+
+.cardText {
+    margin-left: -10px;
+    margin-top: 15px;
+}
+
+.cardLearningMode {
+    border-top: 1px solid rgba(0, 0, 0, 0.171);
+    margin-left: -10px;
+    padding-top: 15px;
+}
