@@ -76,6 +76,7 @@ const paymentPlan = (props) => {
                 <button style={style}>Apply Now</button>
             </div>
         </div> */}
+      <div className="">
 
       <div className={styles.learn}>
         <h3 className={styles.title}>{title}</h3>
@@ -138,8 +139,9 @@ const paymentPlan = (props) => {
           <div>{feature6}</div>
         </div> */}
       </div>
-      <div className="mybtn" style={{margin: "0 32px"}}>
+      <div className="" style={{margin: "0 32px"}}>
         <button className="btn mb-4" style={style}>Apply Now</button>
+      </div>
       </div>
     </>
   );
