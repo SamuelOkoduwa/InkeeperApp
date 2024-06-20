@@ -2,7 +2,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import "./OurCourses.css";
+import "./OurCourses.Module.css";
 
 function CardContainer(props) {
   // eslint-disable-next-line react/prop-types
@@ -109,7 +109,7 @@ const OurCourses = () => {
             />
           </div>
 
-          <div className="col col-lg-3 mt-2 ">
+          <div className="col  mt-2 ">
             <CardContainer
               cardImage="/src/assets/Images/OurCoursesImg/Digital marketing.png"
               cardTitle={"Digital Marketing"}
