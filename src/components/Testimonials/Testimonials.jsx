@@ -79,7 +79,7 @@ const Testimonials = () => {
   );
 
   return (
-    <div className={styles.wholecontainer}>
+    <div className={styles.testimonialsection}>
       <div className={styles.titlecontainer}>
         <h4>What our students are saying?</h4>
         <p>
