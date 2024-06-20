@@ -51,6 +51,7 @@ margin-top: 20;
 .HeroText {
 align-items: normal;
 width: 600px;
+gap: 40px;
 }
 
 .HeroImage {

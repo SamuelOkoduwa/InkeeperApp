@@ -3,11 +3,12 @@ import Style from "./Course.module.css";
 import CourseImage from "../../assets/Images/PD Image.png";
 
 
-function ProductDesign() {
+
+function ProductDesignHero() {
   return (
     <div className={Style.ProductDesign}>
-      {/*ProductDesign*/}
-      {/* <ProductDesign /> */}
+      {/*ProductDesignHero*/}
+      {/* <ProductDesignHero /> */}
 
       <div class={Style.HeroText}>
         <h1 class={Style.Heroheading}>Be a Product Designer in 3 Months</h1>
@@ -16,7 +17,7 @@ function ProductDesign() {
           user-centred interfaces (UI) and user experiences (UX) for web and
           mobile applications.
         </p>
-        <button></button>
+        <button>Apply Here</button>
       </div>
 
       {/*ImageContainer*/}
@@ -29,4 +30,4 @@ function ProductDesign() {
   );
 }
 
-export default ProductDesign
+export default ProductDesignHero
