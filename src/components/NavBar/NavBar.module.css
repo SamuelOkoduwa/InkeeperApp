@@ -1,48 +1,149 @@
-
-*{
-	background: #F5F8F8;
-
+* {
+  background: #f5f8f8;
 }
 
 .nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-left: 90px;
-	margin-right: 15rem;
-	margin-top: 40px;
-	font-size: larger;
-
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 6rem 20px 6rem;
 }
 
-.ul {
-	display: flex;
-	list-style: none;
-	gap: 1rem;
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
 }
 
-nav a{
-	text-decoration: none;
-	color: #73808F;
-   margin-left: 30px;
+.navbarss_menu {
+  margin: 0 1rem;
+  color: black;
 }
 
-.btn{
-	background: #002CB0;
-	color: #E4F5FF;
-padding: 5px;
-border-radius: 5px;
+nav a {
+  text-decoration: none;
+  background: #f5f8f8;
 }
 
-.caret{
-	position: absolute;
-	display: block;
+.nav a:hover {
+  background-color: #ddd;
+  color: blue;
+  cursor: pointer;
 }
 
-@media only screen and (max-width:800px) {
-	.nav ul li btn {
-		width: fit-content;
-		height:fit-content;
-	}
+.menu_contacts {
+  background-color: blue;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.menu_icon {
+  display: none; /* Initially hidden */
+}
+
+.close_icon {
+  display: none; /* Initially hidden */
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.drpdwn {
+  position: relative;
+}
+
+.drpdwn_menu {
+  background-color: rgb(226, 219, 219);
+  position: absolute;
+  width: 12rem;
+  padding: 0.5rem;
+  z-index: 10;
+  transition: ease-in-out;
+  animation-duration: 2s;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 855px) {
+  nav ul {
+    display: none; /* Hide the navigation menu */
+  }
+
+  .showMenu {
+    display: flex; /* Show the menu when menuOpen is true */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute; /* Position the menu */
+    top: 80px; /* Adjust based on your needs */
+    right: 0;
+    background: white; /* Background color for the dropdown */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .menu_icon {
+    display: flex; /* Show the menu icon */
+    justify-content: flex-end; /* Align to the right */
+    width: 100%; /* Full width to align to the right */
+  }
+
+  .close_icon {
+    display: flex; /* Show the menu icon */
+    justify-content: flex-end; /* Align to the right */
+    width: 100%; /* Full width to align to the right */
+  }
+
+  .menu {
+    display: block;
+    font-size: 100px;
+    margin-right: 1rem;
+  }
+
+  .close {
+    display: block;
+    font-size: 100px;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .showMenu {
+    display: flex; /* Show the menu when menuOpen is true */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute; /* Position the menu */
+    top: 60px; /* Adjust based on your needs */
+    right: 0;
+    background: white; /* Background color for the dropdown */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .menu_icon {
+    display: flex; /* Show the menu icon */
+    justify-content: flex-end; /* Align to the right */
+    width: 100%; /* Full width to align to the right */
+  }
+
+  .menu {
+    display: block;
+    font-size: 100px;
+    margin-right: 1rem;
+  }
+
+  .close_icon {
+    display: flex; /* Show the menu icon */
+    justify-content: flex-end; /* Align to the right */
+    width: 100%; /* Full width to align to the right */
+  }
+  .close {
+    display: block;
+    font-size: 100px;
+    margin-right: 1rem;
+  }
+
+  .drpdwn_menu {
+    background-color: red;
+  }
 }
