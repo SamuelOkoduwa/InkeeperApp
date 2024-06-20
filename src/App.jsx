@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Courses from "./pages/Courses/Courses";
 import Contact from "./pages/Contact/Contact";
 import ApplyNow from "./pages/ApplyNow/ApplyNow";
+
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
         <NavBar />
-
+        <Footer />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/applyNow" element={<ApplyNow />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
