@@ -40,12 +40,12 @@ function NavBar() {
             </span>
             {open && (
               <div className={`${styles.drpdwn_menu}`}>
-                <p>Front-end Development</p>
-                <p>UI/UX</p>
-                <p>Digital Marketing</p>
-                <p>CyberSecurity</p>
-                <p>Data Science/AI</p>
-                <p>Data Analysis</p>
+                <p><Link to="/Frontend Development">Frontend Development</Link></p>
+                <p><Link to="/UI/UX Design">UI/UX  Design</Link></p>
+                <p><Link to="/Digital Marketing">Digital Marketing</Link></p>
+                <p><Link to="/CyberSecurity">CyberSecurity</Link></p>
+                <p><Link to="/Data Science">Data Science/AI</Link></p>
+                <p><Link to="Data Analysis">Data Analysis </Link></p>
               </div>
             )}
           </div>
