@@ -12,7 +12,7 @@ function ApplicationForm() {
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: '#F5F8F8',
-    padding: '0px'
+    
   }
 
   const styles = {
@@ -28,6 +28,12 @@ function ApplicationForm() {
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
       overflow: 'hidden',
     },
+    formRowEqual: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: '10px', // Adjusted gap for better fit
+      flex: '1 1 100%',
+    },
     formImage: {
       flex: '1 1 50%',
       display: 'flex',
@@ -42,6 +48,7 @@ function ApplicationForm() {
     formContent: {
       flex: '1 1 50%',
       padding: '40px',
+      paddingTop: '7%',
     },
     heading: {
       fontSize: '24px',
@@ -66,19 +73,23 @@ function ApplicationForm() {
     label: {
       display: 'block',
       marginBottom: '5px', 
-      fontSize: '14px',
-      color: '#333',
+      fontSize: '16px',
+      
+      color: 'black',
     },
     inputHalf: {
-      width: 'calc(100% - 10px)',
-      
+      width: '1 1 calc(100% - 10px)', 
       padding: '10px 15px',
       fontSize: '14px',
       border: '1px solid #ddd',
       borderRadius: '4px',
       marginTop: '5px',
     },
-    
+    formGroupHalf: {
+      flex: '1 1 calc(50% - 10px)',
+      justifyContent: 'space-between',
+
+    },
     formRow: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -100,6 +111,7 @@ function ApplicationForm() {
     checkboxGroupDiv: {
       display: 'flex',
       alignItems: 'center',
+      marginBottom: '5px',
     },
     btnSubmit: {
       display: 'inline-block',
@@ -129,35 +141,34 @@ function ApplicationForm() {
         <h2 style={styles.heading}>Application Form</h2>
         <p style={styles.paragraph}>We'd love you to show your interest by applying here for free. Please fill out this form.</p>
         <form>
-        <div style={styles.formRow}>
-            <div style={styles.formGroup}>
-            <label>First Name</label>
-            <br/>
+        <div style={styles.formRowEqual}>
+            <div style={styles.formGroupHalf}>
+            <label style={styles.label} htmlFor="firstName">First Name</label>
               <input type="text" placeholder="First name" style={styles.inputHalf} />
             </div>
             <div style={styles.formGroup}>
-            <label>Last Name</label>
+            <label style={styles.label} htmlFor="lastName">Last Name</label>
               <input type="text" placeholder="Last name" style={styles.inputHalf} />
             </div>
           </div>
           <div style={styles.formGroup}>
-          <label>Email</label>
+          <label style={styles.label} htmlFor="email">Email</label>
             <input type="email" placeholder="you@gmail.com" style={styles.input} />
           </div>
           <div style={styles.formGroup}>
-          <label>Phone Number</label>
+          <label style={styles.label} htmlFor="phone">Phone Number</label>
             <input type="tel" placeholder="+2340000000030" style={styles.input} />
           </div>
           <div style={styles.formRow}>
             <div style={styles.formGroup}>
-            <label>Age</label>
+            <label style={styles.label} htmlFor="age">Age</label>
               <select style={styles.inputHalf}>
                 <option value="" disabled selected>Select</option>
                 {/* Add options here */}
               </select>
             </div>
             <div style={styles.formGroup}>
-            <label>Gender</label>
+            <label style={styles.label} htmlFor="gender">Gender</label>
               <select style={styles.inputHalf}>
                 <option value="" disabled selected>Select</option>
                 {/* Add options here */}
@@ -165,14 +176,14 @@ function ApplicationForm() {
             </div>
           </div>
           <div style={styles.formGroup}>
-          <label>Location</label>
+          <label style={styles.label} htmlFor="location">Location</label>
             <select style={styles.select}>
               <option value="" disabled selected>Select</option>
               {/* Add options here */}
             </select>
           </div>
           <div style={styles.formGroup}>
-            <label>Select Course</label>
+          <label style={styles.label}>Select Course</label>
             <br/>
             <div style={styles.checkboxGroup}>
               <div style={styles.checkboxGroupDiv}>
@@ -202,14 +213,14 @@ function ApplicationForm() {
             </div>
           </div>
           <div style={styles.formGroup}>
-          <label>Payment Option</label>
+          <label style={styles.label} htmlFor="paymentOption">Payment Option</label>
             <select style={styles.select}>
               <option value="" disabled selected>Select</option>
               {/* Add options here */}
             </select>
           </div>
           <div style={styles.formGroup}>
-          <label>Learning Mode</label>
+          <label style={styles.label} htmlFor="learningMode">Learning Mode</label>
             <select style={styles.select}>
               <option value="" disabled selected>Select</option>
               {/* Add options here */}
