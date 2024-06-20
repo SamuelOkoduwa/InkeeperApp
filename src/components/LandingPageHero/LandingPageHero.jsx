@@ -24,7 +24,7 @@ function LandingPageHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % names.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [names.length]);
@@ -41,7 +41,7 @@ function LandingPageHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [images.length]);
