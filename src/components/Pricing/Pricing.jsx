@@ -35,7 +35,7 @@ function Pricing() {
       <div style={{ marginTop: "96px" }}>
         <div className="row justify-content-center ">
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-100 border border-0 shadow">
+            <div className="card w-120 border border-0 shadow">
               <div className={styles.popularIcon}>
                 <div className={styles.vectorArrow}>
                   <img className={styles.vectorArrowImg} src={vectorArrow} />
@@ -67,7 +67,7 @@ function Pricing() {
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-100 border border-0 shadow">
+            <div className="card w-120 border border-0 shadow">
               <PaymentPlan
                 title="Best Value"
                 subTitle="One time payment"
@@ -90,7 +90,7 @@ function Pricing() {
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-100 border border-0 shadow">
+            <div className="card w-120 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
@@ -113,11 +113,11 @@ function Pricing() {
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-100 border border-0 shadow">
+            <div className="card w-120 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
-                price="N100, 000 x 3"
+                price="N100,000 x 3"
                 feature1="Payment in 1st and 7th week"
                 feature2="Access to all facilitators live classes"
                 feature3="Learn and get internship slots immediately"
