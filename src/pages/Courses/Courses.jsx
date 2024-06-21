@@ -5,9 +5,9 @@ import OurCourses from '../../components/OurCourses/OurCourses'
 
 function Courses() {
   return (
-	<div className='container'>
-	  <LandingPageHero />
+	<div className='container'> 
 	  <OurCourses />
+	  <LandingPageHero />
 	  <Pricing />
 	</div>
   )
