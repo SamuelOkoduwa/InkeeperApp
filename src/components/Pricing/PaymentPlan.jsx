@@ -129,14 +129,14 @@ const paymentPlan = (props) => {
           <div>{feature5}</div>
         </div>
 
-        {/* <div style={{ marginTop: "5px" }}>
+        <div style={{ marginTop: "5px" }}>
           <div className={styles.contents}>
             <div className={styles.check}>
               <img src={checkIcon6} className={styles.checkImg} />
             </div>
           </div>
           <div>{feature6}</div>
-        </div> */}
+        </div> 
       </div>
       <div className="" style={{margin: "0 32px"}}>
         <button className="btn mb-4" style={style}>Apply Now</button>

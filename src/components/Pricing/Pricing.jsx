@@ -35,7 +35,7 @@ function Pricing() {
       <div style={{ marginTop: "96px" }}>
         <div className="row justify-content-center ">
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-120 border border-0 shadow">
+            <div className="card w-100 border border-0 shadow">
               <div className={styles.popularIcon}>
                 <div className={styles.vectorArrow}>
                   <img className={styles.vectorArrowImg} src={vectorArrow} />
@@ -67,7 +67,7 @@ function Pricing() {
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-120 border border-0 shadow">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Best Value"
                 subTitle="One time payment"
@@ -76,7 +76,7 @@ function Pricing() {
                 feature2="Access to all facilitators live classes"
                 feature3="Learn and get internship slots immediately"
                 feature4="Get mentorship for three months"
-                feature5="Learn in a conducive environment"
+                feature5="Learn in aconducive environment"
                 checkIcon1={check}
                 checkIcon2={check}
                 checkIcon3={check}
@@ -86,11 +86,12 @@ function Pricing() {
                 fntColor="#002CB0"
                 setBorder="2px solid #002CB0"
               />
+
             </div>
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-120 border border-0 shadow">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
@@ -109,11 +110,13 @@ function Pricing() {
                 fntColor="#002CB0"
                 setBorder="2px solid #002CB0"
               />
+              {/* {feature6 && <p>{feature6}</p>} */}
+
             </div>
           </div>
 
           <div className="col-md-6 col-lg-4 mb-4 d-flex align-self-stretch">
-            <div className="card w-120 border border-0 shadow">
+            <div className="card w-100 border border-0 shadow">
               <PaymentPlan
                 title="Flexible Plan"
                 subTitle="Pay In Batches"
@@ -131,7 +134,8 @@ function Pricing() {
                 fntColor="#002CB0"
                 bgColor="transparent"
                 setBorder="2px solid #002CB0"
-              />
+              // {feature6 && <p>{feature6}</p>} // Add it here, but feature6 is not defined for this component
+                />
             </div>
           </div>
         </div>
