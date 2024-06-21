@@ -1,0 +1,403 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../assets/Images/Poppins-Variable.ttf);
+}
+
+.aboutMain {
+    background-color: #F5F8F8;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    font-family: Poppins;
+}
+
+.aboutHead {
+    font-weight: 800;
+    color: #50585F;
+}
+.aboutText {
+    font-weight: 400;
+    color: #5F6974;
+    margin-top: 30px;
+}
+
+.aboutHero-btn {
+    border-radius: 8px;
+    background-color: #002CB0;
+    border: 0px;
+    color: #E4F5FF;
+    font-weight: 300;
+}
+.aboutHero-btn:hover {
+    background-color: #0041E4;
+    border-bottom: 2px solid #002E44;
+}
+
+
+.about-img-section {
+    display: flex;
+    position: relative;
+}
+.about-pattern {
+    position: absolute;
+    z-index: 1;
+}
+.about-space {
+    position: absolute;
+    z-index: 2;
+}
+.about-office {
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/* RESPONSIVENESS */
+@media (min-width: 1025px) {
+    .aboutHero-section {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .aboutHead {
+        font-size: 45px;
+        line-height: 64px;
+    }
+
+    .aboutText {
+        font-size: 22.5px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 80px;
+        width: 189px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    
+    .about-space {
+        position: absolute;
+        z-index: 2;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 250px;
+    }
+    .about-office {
+        left: 53%;
+        top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutMain {
+        height: 600px;
+        width: 100vw;
+    }
+    .aboutHero-section {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .aboutMain {
+        padding-top: 0px;
+    }
+    .aboutHead {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .aboutText {
+        margin-top: 15px;
+        padding-top: 0px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 140px;
+        height: 56px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 150px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 130px;
+        width: 100px;
+    }
+    .about-office {
+        left: 53%;
+        top: 100px;
+        width: 150px;
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .aboutHero-section {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .aboutHead {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .aboutText {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 13px 25px;
+        font-size: 15px;
+    }
+
+    .aboutMain {
+        height: 700px;
+        width: 100vw;
+    }
+
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 150px;
+        left: 70px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 130px;
+        width: 100px;
+    }
+    .about-office {
+        left: 53%;
+        top: 100px;
+        width: 150px;
+
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .aboutHero-section {
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .aboutHead {
+        font-size: 40px;
+        line-height: 64px;
+    }
+
+    .aboutText {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 20px;
+        width: 189px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .aboutMain {
+        height: 750px;
+        width: 100vw;
+    }
+
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 200px;
+        left: 100px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 130px;
+        width: 160px;
+    }
+    .about-office {
+        left: 53%;
+        top: 100px;
+        width: 200px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .aboutHero-section {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .aboutHead {
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .aboutText {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 13px 25px;
+        font-size: 18px;
+    }
+
+    .aboutMain {
+        width: 100vw;
+    }
+
+
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 170px;
+        left: 0px;
+        top: 50px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 180px;
+        width: 160px;
+    }
+    .about-office {
+        left: 53%;
+        top: 150px;
+        width: 170px;
+
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .aboutHero-section {
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .aboutHead {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .aboutText {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+         margin-top: 50px;
+        margin-bottom: 50px;
+        width: 180px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 15px;
+    }
+
+    .aboutMain {
+        width: 100vw;
+    }
+
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 200px;
+        top: 30px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 160px;
+        width: 160px;
+    }
+    .about-office {
+        left: 53%;
+        top: 130px;
+        width: 200px;
+
+    }
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .aboutMain {
+        width: 100vw;
+    }
+
+    .about-space {
+        position: absolute;
+        z-index: 2;
+        width: 250px;
+        top: 30px;
+    }
+    .about-pattern {
+        left: 34%;
+        top: 220px;
+        width: 160px;
+    }
+    .about-office {
+        left: 53%;
+        top: 150px;
+        width: 250px;
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .aboutHero-section {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .aboutHead {
+        font-size: 45px;
+        line-height: 64pxpx;
+    }
+
+    .aboutText {
+        font-size: 22.5px;
+        line-height: 32px;
+    }
+
+    .aboutHero-btn {
+        margin-top: 80px;
+        width: 189px;
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+    .about-pattern {
+        position: absolute;
+        z-index: 1;
+    }
+    .about-space {
+        position: absolute;
+        z-index: 2;
+    }
+    .about-office {
+        position: absolute;
+        z-index: 2;
+    }
+}

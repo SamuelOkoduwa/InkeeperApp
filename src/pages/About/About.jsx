@@ -6,11 +6,13 @@ import Partners from "../../components/Partners/Partners";
 import AmazingCompany from "../../components/AmazingCompaniesIntern/AmazingCompany";
 import MeetTeam from "../../components/MeetTeam/MeetTeam";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import AboutHero from '../../components/AboutHero/AboutHero'
 
 
 function About() {
   return (
     <div>
+      <AboutHero />
       <Partners />
       <AmazingCompany />
       <MeetTeam />
@@ -20,5 +22,4 @@ function About() {
     </div>
   );
 }
-
 export default About;

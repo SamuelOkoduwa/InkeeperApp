@@ -24,7 +24,7 @@
 .hero-head span {
     color: #0041E4;
     display: inline-block;
-    animation: slideInFromBottom .3s ease-in-out;
+    animation: slideInFromBottom .5s ease-in-out;
 }
 
 @keyframes slideInFromBottom {
@@ -68,7 +68,7 @@
 .img-section img{
     display: block;
     margin: auto;
-    animation: fadeIn .3s ease-in-out;
+    animation: fadeIn .5s ease-in-out;
 }
 
 
@@ -165,6 +165,9 @@
     .hero-head {
         font-size: 30px;
     }
+    .hero-head span {
+        display: block;
+    }
 
     .hero-text {
         font-size: 18px;
@@ -221,7 +224,7 @@
     }
 
     .img-section img {
-        padding: 10px;
+        padding: 30px;
     }
 
 }
@@ -237,6 +240,9 @@
     .hero-head {
         font-size: 35px;
         line-height: 50px;
+    }
+    .hero-head span {
+        display: block;
     }
 
     .hero-text {
@@ -423,7 +429,7 @@
 @media (min-width: 901px) and (max-width: 1024px) {
     .text-section {
         padding-top: 50px;
-        padding-left: 40px;
+        padding-left: 10px;
     }
 
     .hero-head {
@@ -456,7 +462,7 @@
         height: 60px;
         padding: 0%;
         top: 90%;
-        left: 5%;
+        left: 12%;
     }
 
     .thousand {
@@ -518,7 +524,7 @@
         width: 451px;
         height: 88px;
         top: 90%;
-        left: 15%;
+        right: 10%;
     }
 
     .thousand {
