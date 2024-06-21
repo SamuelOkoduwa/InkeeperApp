@@ -1,8 +1,15 @@
-// eslint-disable-next-line no-unused-vars
+"/src/assets/Images/OurCoursesImg/Rating.png"// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import OurCoursesCss from  "./OurCourses.module.css";
+import OurCoursesCss from  "../OurCourses/OurCourses.module.css";
+import ratingImg from "/src/assets/Images/OurCoursesImg/Rating.png";
+import frontEndImg from "/src/assets/Images/OurCoursesImg/IMG.png";
+import dataImg from "/src/assets/Images/OurCoursesImg/data-Analysis.png";
+import UX from "/src/assets/Images/OurCoursesImg/UX.png";
+import security from "/src/assets/Images/OurCoursesImg/cyber-Security.png";
+import marketing from "/src/assets/Images/OurCoursesImg/Digital marketing.png";
+import AI from "/src/assets/Images/OurCoursesImg/Data science.png"
 
 function CardContainer(props) {
   // eslint-disable-next-line react/prop-types
@@ -73,9 +80,9 @@ const OurCourses = () => {
         <div className="row">
           <div className="col mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/IMG.png"
+              cardImage={frontEndImg}
               cardTitle={"FrontEnd Development"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -84,9 +91,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/data-Analysis.png"
+              cardImage={dataImg}
               cardTitle={"Data Analysis"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -95,9 +102,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/UX.png"
+              cardImage={UX}
               cardTitle={"UI/UX Design"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -106,9 +113,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2 ">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/cyber-Security.png"
+              cardImage={security}
               cardTitle={"Cyber Security"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -117,9 +124,9 @@ const OurCourses = () => {
 
           <div className="col  mt-2 ">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/Digital marketing.png"
+              cardImage={marketing}
               cardTitle={"Digital Marketing"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
@@ -127,9 +134,9 @@ const OurCourses = () => {
           </div>
           <div className="col  mt-2">
             <CardContainer
-              cardImage="/src/assets/Images/OurCoursesImg/Data science.png"
+              cardImage={AI}
               cardTitle={"Data Science/AI"}
-              cardRating={"/src/assets/Images/OurCoursesImg/Rating.png"}
+              cardRating={ratingImg}
               cardRatingText={"4.5 (210)"}
               cardText={"lorem ipsum dolor sit amet, consectetur"}
               cardPrice={"N450,000 • 12 weeks"}
