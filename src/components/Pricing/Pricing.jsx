@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Pricing.module.css";
+import styles from "./PricingRenamed.module.css";
 import vectorArrow from "../../assets/Images/Vectors-arrow.png";
 import PaymentPlan from "./PaymentPlan";
 import check from "../../assets/Images/Icon.jpg";

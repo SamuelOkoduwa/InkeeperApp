@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Pricing.module.css";
+import styles from "./PricingRenamed.module.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import check from "../../assets/Images/Icon.jpg";
