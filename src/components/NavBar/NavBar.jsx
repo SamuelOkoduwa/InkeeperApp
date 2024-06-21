@@ -17,16 +17,19 @@ function NavBar() {
         </li>
 
         <li className="navbarss_menu">
+          <Link to="/About">About</Link>
+        </li>
+
+        <li className="navbarss_menu">
           <Link to="/courses">Courses</Link>
           <img className="caret" src={arrow_down} alt="Dropdown Arrow" />
         </li>
 
-        <li className="navbarss_menu">
-          <Link to="/About">About</Link>
-        </li>
+        
 
         <li className={`navbarss_menu ${styles.menu_applyNow}`}>
-          <Link to="/applyNow">Apply Now</Link>
+          <Link to="#">Apply Now</Link>
+          {/* <Link to="/applyNow">Apply Now</Link> */}
         </li>
       </ul>
     </nav>

@@ -1,10 +1,11 @@
 import React from 'react'
 import Pricing from '../../components/Pricing/Pricing'
+import LandingPageHero from '../../components/LandingPageHero/LandingPageHero'
 
 function Courses() {
   return (
 	<div className='container'>
-	  Welcome to Courses page
+	  <LandingPageHero />
 	  <Pricing />
 	</div>
   )
