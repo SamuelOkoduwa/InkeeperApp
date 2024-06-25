@@ -1,0 +1,65 @@
+.ProductDesignHero {
+  display: flex;
+  align-items: center;
+  background-color: #f5f8f8;
+  padding: 88px;
+}
+
+.HeroText {
+  align-items: normal;
+  order: 1;
+}
+
+.Herobody {
+  font-size: x-large;
+  font-weight: 400px;
+  /* height: 136px; */
+
+  margin-right: 60px;
+  margin-bottom: 60px;
+  gap: 16px;
+}
+.HeroImage {
+  order: 2;
+}
+.HeroImage img {
+  /* width: 620px; */
+  height: 572px;
+  padding-left: 60px;
+  border-radius: 20px;
+  margin-left: 60px;
+}
+.Heroheading {
+  font-weight: bolder;
+  margin-bottom: 24px;
+}
+.Herobutton {
+  background-color: #002cb0;
+  color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .ProductDesignHero {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .HeroText {
+    order: 2;
+  }
+  .HeroImage {
+    order: 1;
+  }
+  .HeroImage img {
+    height: 200px;
+    padding-left: 0;
+    border-radius: 0;
+    margin-left: 0;
+    gap: 0;
+  }
+}

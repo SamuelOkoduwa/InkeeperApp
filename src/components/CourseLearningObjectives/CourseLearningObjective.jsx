@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./Course.module.css";
-import CourseImage from "../../assets/Images/Course Image.png";
+import CourseImage from "../../assets/Images/PD Image.png";
 import CheckIcon from "../../assets/Icons/tick-circle.svg";
 
 function CourseLearningObjective() {
@@ -9,9 +9,7 @@ function CourseLearningObjective() {
       {/*ImageContainer*/}
       {/* <ImageContainer /> */}
 
-      <div className={Style.ImageCont}>
-        <img src={CourseImage} />
-      </div>
+      <div className={Style.ImageCont}/>
 
       {/*Learning Objectives*/}
       {/* <LearningObjective /> */}

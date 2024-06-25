@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 function footer() {
   return (
-    <div className="main-footer bg-primary-subtle justify-content-end ">
+    <div className="main-footer bg-primary-subtle justify-content-end py-5 ">
       <div className="container">
         <div className="row">
           {/* column 1 */}

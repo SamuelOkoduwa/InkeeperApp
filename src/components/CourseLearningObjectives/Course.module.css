@@ -1,57 +1,57 @@
 .CourseLearningObjective {
-display: flex;
-align-items: normal;
-background-color: #f5f8f8;
-padding: 100px;
-margin-top: 20;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  background-color: #f5f8f8;
+  padding: 88px;
+  margin-top: 20;
 }
 
 .learningobjectives {
-padding-left: 120px;
-padding-top: 24px;
-padding-right: 80px;
-padding-bottom: 24px;
+  padding:0;
 }
 
 .ImageCont {
-border-radius: 20px
+  border-radius: 20px;
 }
 
-.ImageCont img{
+.ImageCont {
   width: 500px;
-  height: 550px;
+  height: 572px;
+  background-image: url("../../assets/Images/PD Image.png");
+  background-size: cover;
+  background-position: center;
   padding: auto;
-  flex-wrap: wrap;
+  
 }
 .heading {
-font-size: x-large;
-font-weight: 800;
+  font-size: x-large;
+  font-weight: 800;
 }
 
 .textbox {
-display: flex;
-align-items: normal;
-width: 600px;
+  display: flex;
+  align-items: normal;
+  width: 600px;
 }
 
 .text {
   font-size: larger;
-margin-left: 16px;
+  margin-left: 16px;
 }
 
-.ProductDesign {
-display: flex;
-align-items: normal;
-background-color: #ffffff;
-padding: 100px;
-margin-top: 20;
+.ProductDesignHero {
+  display: flex;
+  align-items: normal;
+  background-color: #ffffff;
+  padding: 100px;
+  margin-top: 20;
 }
 
 .HeroText {
-align-items: normal;
-width: 600px;
-gap: 40px;
+  align-items: normal;
+  width: 600px;
+  gap: 40px;
 }
 
 .HeroImage {
@@ -63,5 +63,23 @@ gap: 40px;
 
 .Heroheading {
   font-size: xx-large;
-font-weight: 800;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+  .CourseLearningObjective {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .ImageCont {
+    width: 300px;
+    height: 300px;
+  }
+  .learningobjectives {
+    padding: 0;
+  }
+
+  .textbox {
+    width: auto;
+  }
 }

@@ -1,17 +1,12 @@
-import React from 'react';
+import React from "react";
 import Style from "./Hero.module.css";
-import CourseImage from "../../assets/Images/Course Image.png";
+import CourseImage from "../../assets/Images/FrontEnd Image.jpg";
 
-
-
-function ProductDesignHero() {
+function SoftwareDevHero() {
   return (
     <div className={Style.ProductDesignHero}>
       {/*ProductDesignHero*/}
       {/* <ProductDesignHero /> */}
-      <div className={Style.HeroImage }>
-        <img src={CourseImage} />
-      </div>
 
       <div class={Style.HeroText}>
         <h1 class={Style.Heroheading}>Be a Product Designer in 3 Months.</h1>
@@ -26,8 +21,11 @@ function ProductDesignHero() {
       {/*HeroImageContainer*/}
       {/* <HeroImageContainer /> */}
 
+      <div className={Style.HeroImage}>
+        <img src={CourseImage} />
+      </div>
     </div>
   );
 }
 
-export default ProductDesignHero
+export default SoftwareDevHero;
