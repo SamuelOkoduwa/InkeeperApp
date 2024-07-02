@@ -1,246 +1,178 @@
-import React from 'react'
+import myImage from "../../assets/Images/hero.png";
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import myimage from "../../assets/Images/hero.png";
+const ApplicationForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    age: '',
+    gender: '',
+    location: '',
+    course: '',
+    paymentOption: '',
+    learningMode: ''
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
 
-
-
-function ApplicationForm() {
-
-  const containerstylr = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    backgroundColor: '#F5F8F8',
-    
-  }
-
-  const styles = {
-
-
-    formContainer: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      margin: '50px auto',
-      maxWidth: '1200px',
-      backgroundColor: '#ffffff',
-      borderRadius: '8px',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-      overflow: 'hidden',
-    },
-    formRowEqual: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      gap: '10px', // Adjusted gap for better fit
-      flex: '1 1 100%',
-    },
-    formImage: {
-      flex: '1 1 50%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#f8f8f8',
-    },
-    formImageImg: {
-      maxWidth: '100%',
-      height: 'auto',
-    },
-    formContent: {
-      flex: '1 1 50%',
-      padding: '40px',
-      paddingTop: '7%',
-    },
-    heading: {
-      fontSize: '24px',
-      marginBottom: '20px',
-    },
-    paragraph: {
-      marginBottom: '30px',
-      fontSize: '16px',
-      color: '#666',
-    },
-    formGroup: {
-      marginBottom: '30px',
-    },
-    input: {
-      width: '100%',
-      padding: '10px 15px',
-      fontSize: '14px',
-      border: '1px solid #ddd',
-      borderRadius: '4px',
-      marginTop: '5px',
-    },
-    label: {
-      display: 'block',
-      marginBottom: '5px', 
-      fontSize: '16px',
-      
-      color: 'black',
-    },
-    inputHalf: {
-      width: '1 1 calc(100% - 10px)', 
-      padding: '10px 15px',
-      fontSize: '14px',
-      border: '1px solid #ddd',
-      borderRadius: '4px',
-      marginTop: '5px',
-    },
-    formGroupHalf: {
-      flex: '1 1 calc(50% - 10px)',
-      justifyContent: 'space-between',
-
-    },
-    formRow: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      gap: '4%',
-    },
-    select: {
-      width: '100%',
-      padding: '10px 15px',
-      fontSize: '14px',
-      border: '1px solid #ddd',
-      borderRadius: '4px',
-      marginTop: '5px',
-    },
-    checkboxGroup: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(2, 1fr)',
-      gap: '10px',
-    },
-    checkboxGroupDiv: {
-      display: 'flex',
-      alignItems: 'center',
-      marginBottom: '5px',
-    },
-    btnSubmit: {
-      display: 'inline-block',
-      padding: '12px 20px',
-      backgroundColor: '#0068D8',
-      color: '#ffffff',
-      border: 'none',
-      width: '100%',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      fontSize: '16px',
-      transition: 'background-color 0.3s',
-    },
-    btnSubmitHover: {
-      backgroundColor: '#0056b3',
-    },
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
   };
 
   return (
-    <>
-    
-      <div style={containerstylr}>
-        
-          <img src={myimage} alt="Application Form" />
-       
-          <div style={styles.formContent}>
-        <h2 style={styles.heading}>Application Form</h2>
-        <p style={styles.paragraph}>We'd love you to show your interest by applying here for free. Please fill out this form.</p>
-        <form>
-        <div style={styles.formRowEqual}>
-            <div style={styles.formGroupHalf}>
-            <label style={styles.label} htmlFor="firstName">First Name</label>
-              <input type="text" placeholder="First name" style={styles.inputHalf} />
+    <div className="container-fluid p-0">
+      <div className="row g-0">
+        <div className="col-lg-6">
+          <img 
+            src={myImage} 
+            alt="Architectural structure" 
+            className="img-fluid h-100 object-fit-cover"
+            style={{maxHeight: '100vh'}}
+          />
+        </div>
+        <div className="col-lg-6 bg-white p-4">
+          <h2 className="mb-2">Application Form</h2>
+          <p className="text-muted mb-4">We'd love you to show your interest by applying here for free. Please fill out this form.</p>
+          <form onSubmit={handleSubmit}>
+            <div className="row mb-3">
+              <div className="col-md-6">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="First Name"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="col-md-6">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Last Name"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
+              </div>
             </div>
-            <div style={styles.formGroup}>
-            <label style={styles.label} htmlFor="lastName">Last Name</label>
-              <input type="text" placeholder="Last name" style={styles.inputHalf} />
+            <div className="mb-3">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="you@gmail.com"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
             </div>
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="email">Email</label>
-            <input type="email" placeholder="you@gmail.com" style={styles.input} />
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="phone">Phone Number</label>
-            <input type="tel" placeholder="+2340000000030" style={styles.input} />
-          </div>
-          <div style={styles.formRow}>
-            <div style={styles.formGroup}>
-            <label style={styles.label} htmlFor="age">Age</label>
-              <select style={styles.inputHalf}>
-                <option value="" disabled selected>Select</option>
-                {/* Add options here */}
+            <div className="mb-3">
+              <input
+                type="tel"
+                className="form-control"
+                placeholder="+234000000000"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="row mb-3">
+              <div className="col-md-6">
+                <select
+                  className="form-select"
+                  name="age"
+                  value={formData.age}
+                  onChange={handleChange}
+                >
+                  <option value="">Age</option>
+                  {[...Array(83)].map((_, i) => (
+                    <option key={i} value={i + 18}>{i + 18}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="col-md-6">
+                <select
+                  className="form-select"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                >
+                  <option value="">Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div className="mb-3">
+              <select
+                className="form-select"
+                name="location"
+                value={formData.location}
+                onChange={handleChange}
+              >
+                <option value="">Location</option>
+                <option value="local">Local</option>
+                <option value="international">International</option>
               </select>
             </div>
-            <div style={styles.formGroup}>
-            <label style={styles.label} htmlFor="gender">Gender</label>
-              <select style={styles.inputHalf}>
-                <option value="" disabled selected>Select</option>
-                {/* Add options here */}
+            <div className="mb-3">
+              <select
+                className="form-select"
+                name="course"
+                value={formData.course}
+                onChange={handleChange}
+              >
+                <option value="">Select Course</option>
+                <option value="ui_ux">UI/UX Design</option>
+                <option value="ui_ux">UI/UX Design</option>
+                <option value="ui_ux">UI/UX Design</option>
+                <option value="ui_ux">UI/UX Design</option>
+                <option value="ui_ux">UI/UX Design</option>
               </select>
             </div>
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="location">Location</label>
-            <select style={styles.select}>
-              <option value="" disabled selected>Select</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label}>Select Course</label>
-            <br/>
-            <div style={styles.checkboxGroup}>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux1" />
-                <label htmlFor="uiux1">UI/UX Design</label>
-              </div>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux2" />
-                <label htmlFor="uiux2">UI/UX Design</label>
-              </div>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux3" />
-                <label htmlFor="uiux3">UI/UX Design</label>
-              </div>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux4" />
-                <label htmlFor="uiux4">UI/UX Design</label>
-              </div>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux5" />
-                <label htmlFor="uiux5">UI/UX Design</label>
-              </div>
-              <div style={styles.checkboxGroupDiv}>
-                <input type="checkbox" id="uiux6" />
-                <label htmlFor="uiux6">UI/UX Design</label>
-              </div>
+            <div className="mb-3">
+              <select
+                className="form-select"
+                name="paymentOption"
+                value={formData.paymentOption}
+                onChange={handleChange}
+              >
+                <option value="">Payment Option</option>
+                <option value="full">Full Payment</option>
+                <option value="installment">Installment</option>
+              </select>
             </div>
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="paymentOption">Payment Option</label>
-            <select style={styles.select}>
-              <option value="" disabled selected>Select</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <div style={styles.formGroup}>
-          <label style={styles.label} htmlFor="learningMode">Learning Mode</label>
-            <select style={styles.select}>
-              <option value="" disabled selected>Select</option>
-              {/* Add options here */}
-            </select>
-          </div>
-          <button
-            type="submit"
-            style={styles.btnSubmit}
-            onMouseOver={(e) => (e.target.style.backgroundColor = styles.btnSubmitHover.backgroundColor)}
-            onMouseOut={(e) => (e.target.style.backgroundColor = styles.btnSubmit.backgroundColor)}
-          >
-            Send Message
-          </button>
-        </form>
+            <div className="mb-3">
+              <select
+                className="form-select"
+                name="learningMode"
+                value={formData.learningMode}
+                onChange={handleChange}
+              >
+                <option value="">Learning Mode</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+                <option value="hybrid">Hybrid</option>
+              </select>
+            </div>
+            <button type="submit" className="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
       </div>
-      </div>
-    
-    </>
+    </div>
   );
-}
+};
 
 export default ApplicationForm;
 

@@ -5,6 +5,8 @@ import About from "./pages/About/About"
 import Courses from "./pages/Courses/Courses"
 import Contact from "./pages/Contact/Contact"
 import ApplyNow from "./pages/ApplyNow/ApplyNow"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Route, Routes, BrowserRouter} from "react-router-dom"
 
 function App() {
